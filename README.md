@@ -7,4 +7,4 @@ An application built in Electron that offers performance metrics and visual grap
 The application will aggregate by retrieving and displaying information on the database health by periodically accessing Cassandra's system logs.
 
 
-JVM exporter function to retrieve logs and display within our application.
+Utilizes the JMX exporter to retrieve logs and display within our application.
