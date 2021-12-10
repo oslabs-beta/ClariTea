@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/oslabs-beta/cassandra-visualizer#readme",
   "dependencies": {
+    "@astrajs/rest": "^0.3.1",
+    "cassandra-driver": "^4.6.3",
     "concurrently": "^6.4.0",
     "express": "^4.17.1",
     "file-loader": "^6.2.0",
