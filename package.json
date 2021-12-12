@@ -2,12 +2,13 @@
   "name": "cassandra-visualizer",
   "version": "1.0.0",
   "description": "Apache Cassandra Monitoring Dashboard",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production webpack --mode production --config=./webpack.build.config.js && electron --noDevServer .",
-    "dev": "concurrently \"node server/server.js\" \"webpack serve --mode development\"",
-    "build": "webpack --config webpack.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prod": "cross-env NODE_ENV=production webpack --mode production --config webpack.build.config.js && electron --noDevServer .",
+    "start": "cross-env NODE_ENV=development webpack serve --hot --host 0.0.0.0 --config=./webpack.dev.config.js --mode development",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.build.config.js --mode production",
+    "package": "npm run build",
+    "postpackage": "electron-packager ./ --out=./builds"
   },
   "repository": {
     "type": "git",
@@ -20,25 +21,28 @@
   },
   "homepage": "https://github.com/oslabs-beta/cassandra-visualizer#readme",
   "dependencies": {
-    "concurrently": "^6.4.0",
     "express": "^4.17.1",
-    "file-loader": "^6.2.0",
-    "html-webpack-plugin": "^5.5.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "webpack-dev-server": "^4.6.0"
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
     "@babel/preset-react": "^7.16.0",
     "babel-loader": "^8.2.3",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.5.1",
     "electron": "^16.0.4",
+    "electron-devtools-installer": "^3.2.0",
+    "electron-packager": "^15.3.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.2.0",
     "node-sass": "^7.0.0",
     "sass-loader": "^12.4.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.65.0",
-    "webpack-cli": "^4.9.1"
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
   }
 }
