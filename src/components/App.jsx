@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from './header/header.jsx';
+import MainContainer from './Container/MainContainer.jsx'
 
 
 export default function App() {
   return (
     <div>
-      <Header />
+      <MainContainer />
     </div>
   )
 };
