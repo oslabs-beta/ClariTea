@@ -1,11 +1,11 @@
 import React from 'react';
-import MainContainer from './MainContainer'
+// import MainContainer from '../container/MainContainer'
 
 
 export default function App() {
   return (
     <div>
-      <MainContainer />
+      <h1>Cassandra Visualizer</h1>
     </div>
   )
 };
