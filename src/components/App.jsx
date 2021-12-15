@@ -1,11 +1,39 @@
-import React  from 'react';
+import React, {useState}  from 'react';
+import Tree from '../view/Tree.jsx'
 
-
-export default function App() {
+const initialData = {
+  name: "😐",
+  children: [
+    {
+      name: "🙂",
+      children: [
+        {
+          name: "😀"
+        },
+        {
+          name: "😁"
+        },
+        {
+          name: "🤣"
+        }
+      ]
+    },
+    {
+      name: "😔"
+    }
+  ]
+};
+function App() {
+  const [data, setData] = useState(initialData);
   return (
-    <div>
+    <React.Fragment>
       <h1>Cassandra Visualizer</h1>
-      <p>Hope this works</p>
-    </div>
-  )
+      <Tree data={data} />
+      <button onClick={() => setData(initialData.children[0])}>
+        Update data
+      </button>
+    </React.Fragment>
+  );
 }
+
+export default App;
