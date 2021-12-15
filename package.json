@@ -21,17 +21,15 @@
   },
   "homepage": "https://github.com/oslabs-beta/cassandra-visualizer#readme",
   "dependencies": {
-    "express": "^4.17.1",
-<<<<<<< HEAD
-    "fs": "^0.0.1-security",
-    "path": "^0.12.7",
-=======
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@material-ui/core": "^4.12.3",
     "@mui/icons-material": "^5.2.1",
     "@mui/material": "^5.2.3",
->>>>>>> dev
+    "cassandra-driver": "^4.6.3",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "styled-components": "^5.3.3"
