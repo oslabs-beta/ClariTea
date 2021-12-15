@@ -7,6 +7,26 @@
     <title>Cassandra Visualizer</title>
 </head>
 <body>
+    <div id="holder">
+        Drag your file here
+      </div>
+      
+      <script>
+        document.addEventListener('drop', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+      
+          for (const f of e.dataTransfer.files) {
+            console.log('File(s) you dragged here: ', f.path);
+            // post f.path to server, append file sync to models for connection pool start
+            alert('Success!');
+          }
+        });
+        document.addEventListener('dragover', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+        });
+      </script></div>
     <div id = "root"></div>
 </body>
 </html>
