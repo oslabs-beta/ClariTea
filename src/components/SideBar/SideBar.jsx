@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import NavButton from './Buttons.jsx'
+import { Link } from "react-router-dom";
+
 
 // whole sidebar
 const SideBarStyle = styled.div`
@@ -21,25 +23,18 @@ function SideBar() {
                 key='SideButton0'
                 className='upload'
                 view='Upload'
-                click={(e) => {
-
-                }}
             />
+            <Link to="/tree">
             <NavButton
                 key='SideButton1'
                 className='visualize'
                 view='Visualize'
-                click={(e) => {
-
-                }}
             />
+            </Link>
             <NavButton
                 key='SideButton2'
                 className='customize'
                 view='Customize'
-                click={(e) => {
-
-                }}
             />
         </SideBarStyle>
     )

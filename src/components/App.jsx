@@ -1,14 +1,15 @@
 import React from 'react';
 import MainContainer from './Container/MainContainer.jsx'
+import Tree from './views/Tree.jsx'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-
-export default function App() {
-  return (
-    <div>
-      <MainContainer />
-    </div>
-  )
-};
+// export default function App() {
+//   return (
+//     <div>
+//       <MainContainer />
+//     </div>
+//   )
+// };
 
 // import React, {useState}  from 'react';
 // import Tree from '../view/Tree.jsx'
@@ -49,9 +50,11 @@ export default function App() {
 //   );
 // }
 
-// export default App;
-//     <div>
-//       <MainContainer />
-//     </div>
-//   )
-// };
+
+export default function App() {
+  return (
+    <div>
+      <MainContainer />
+    </div>
+  )
+};
