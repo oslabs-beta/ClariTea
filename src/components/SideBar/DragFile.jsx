@@ -13,7 +13,7 @@ document.addEventListener('drop', (e) => {
         fetch('/api/fileUpload', {
             method: "POST",
             headers: { 'Content-Type': 'application-json' },
-            body: JSON.stringify({ 'filePath': f.path }),
+            body: JSON.stringify({ 'filePath': f.path }),git 
         })
             .then(res => alert('Upload success!'))
             .catch(error => console.log(error));
