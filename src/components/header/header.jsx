@@ -11,7 +11,7 @@ export default function Header() {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Cassandra Visualizer
+            ClariTea
           </Typography>
           <Button color="inherit" style={{textDecoration: 'none', color: 'white'}}>
           <a style={{ display: 'flex', textDecoration: 'none', alignItems: 'center', color: 'white'}} color="inherit" href="https://github.com/oslabs-beta/cassandra-visualizer" target="_blank">
@@ -19,7 +19,7 @@ export default function Header() {
               <p>Github</p>
             </a>
           </Button>
-          <Button href="" color="inherit">Demo</Button>
+          <Button href="" color="inherit">Tutorial</Button>
         </Toolbar>
       </AppBar>
     </Box>
