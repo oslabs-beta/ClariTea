@@ -1,4 +1,4 @@
-<h1 align="center">Cassandra Visualizer</h1>
+<h1 align="center">ClariTea</h1>
 
 
 <h3 align="center">
