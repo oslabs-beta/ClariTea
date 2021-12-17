@@ -1,7 +1,7 @@
 {
   "name": "cassandra-visualizer",
   "version": "1.0.0",
-  "description": "Apache Cassandra Monitoring Dashboard",
+  "description": "Apache Cassandra Schema Visualizer",
   "main": "main.js",
   "scripts": {
     "prod": "cross-env NODE_ENV=production webpack --mode production --config webpack.build.config.js && electron --noDevServer .",
@@ -12,22 +12,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oslabs-beta/cassandra-visualizer.git"
+    "url": "git+https://github.com/oslabs-beta/ClariTea.git"
   },
   "author": "Alexis Smith, Brit Lim, Kirsten Coronado, Peyton Pedersen, Phillip Yoo",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/oslabs-beta/cassandra-visualizer/issues"
+    "url": "https://github.com/oslabs-beta/ClariTea/issues"
   },
-  "homepage": "https://github.com/oslabs-beta/cassandra-visualizer#readme",
+  "homepage": "https://github.com/oslabs-beta/ClariTea#readme",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@material-ui/core": "^4.12.3",
     "@mui/icons-material": "^5.2.1",
     "@mui/material": "^5.2.3",
+    "cassandra-driver": "^4.6.3",
     "d3": "^7.2.1",
     "express": "^4.17.1",
+    "path": "^0.12.7",
     "react": "^17.0.2",
     "react-d3-tree": "^3.1.1",
     "react-dom": "^17.0.2",
