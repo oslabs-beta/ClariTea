@@ -1,13 +1,13 @@
 import React from 'react';
 import SideBar from '../SideBar/SideBar.jsx'
 import Header from '../header/header.jsx'
-import Upload from '../SideBar/Upload.jsx'
+import MyDropzone from '../SideBar/dropzone.jsx'
 
 export default function MainContainer() {
     return (
         <div>
             <Header />
-            <Upload />
+            <MyDropzone />
             <SideBar />
         </div>
     )
