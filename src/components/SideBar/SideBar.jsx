@@ -19,10 +19,9 @@ const SideBarStyle = styled.div`
 function SideBar() {
     return (
         <SideBarStyle>
-            <Link to="/tree">
+            <Link to="/tree" id="visualize">
             <NavButton
                 key='SideButton1'
-                className='visualize'
                 view='Visualize'
             />
             </Link>

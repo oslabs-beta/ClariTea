@@ -14,7 +14,7 @@ module.exports = {
     plugins: [
     new CleanWebpackPlugin(),
     ],
-    mode: 'development',
+    mode: 'production',
     module: {
         rules: [
           {
