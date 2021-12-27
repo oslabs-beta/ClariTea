@@ -13,13 +13,13 @@ const router = require('./routes/apiRouter.js');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 
-//if we want to serve static files, app.use goes here.
-app.use('/api', router);
+// //if we want to serve static files, app.use goes here.
+// app.use('/api', router);
 
-app.get('/api', (req, res) => {
-  // res.send(mockResponse);
-  return res.status(200).json();
-});
+// app.get('/api', (req, res) => {
+//   // res.send(mockResponse);
+//   return res.status(200).json();
+// });
 app.get('/', (req, res) => {
  res.status(200).send('Hello World!');
 });
