@@ -4,7 +4,8 @@
   "description": "Apache Cassandra Schema Visualizer",
   "main": "main.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack serve --config=./webpack.dev.config.js",
+    "server": "node server/server.js",
+    "dev": "cross-env NODE_ENV=development concurrently \"nodemon server/server.js\" \"webpack serve --config=./webpack.dev.config.js\"",
     "prod": "cross-env NODE_ENV=production webpack --mode production --config webpack.build.config.js && electron --noDevServer .",
     "start": "electron-forge start ",
     "build": "cross-env NODE_ENV=production webpack --config webpack.build.config.js --mode production",
@@ -29,8 +30,10 @@
     "@mui/material": "^5.2.3",
     "cassandra-driver": "^4.6.3",
     "clean-webpack-plugin": "^4.0.0",
+    "concurrently": "^6.5.1",
     "d3": "^7.2.1",
     "express": "^4.17.1",
+    "nodemon": "^2.0.15",
     "path": "^0.12.7",
     "react": "^17.0.2",
     "react-d3-tree": "^3.1.1",
@@ -38,6 +41,7 @@
     "react-dropzone": "^11.4.2",
     "react-router-dom": "^6.1.1",
     "resize-observer-polyfill": "^1.5.1",
+    "save-dev": "^0.0.1-security",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {

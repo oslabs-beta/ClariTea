@@ -41,7 +41,7 @@ module.exports = {
   devtool: 'cheap-source-map',
   devServer: {
     static: {
-    directory: path.resolve(__dirname, 'dist'),
+    directory: path.resolve(__dirname, 'server'),
     },
     devMiddleware: {
       stats: {
@@ -56,11 +56,10 @@ module.exports = {
     historyApiFallback: true,
     headers: { 'Access-Control-Allow-Origin': '*' },
     proxy: {
-        '/api': {
-          target: 'http://localhost:3000/',
+        '/api': 'https://localhost:3000/',
           secure: false,
         },
-    },
+    // },
     onBeforeSetupMiddleware() {
       spawn(
         'electron',
