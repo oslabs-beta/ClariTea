@@ -18,7 +18,7 @@ document.addEventListener('drop', (e) => {
             .then(res => alert('Upload success!'))
             .catch(error => console.log(error));
     }
-    else {throw new Error('Upload must be a zip bundle file. Please check documentation or demo and try again.')}
+    else {alert('Upload must be a zip bundle file. Please check documentation or demo and try again.')}
     //else return error -- must upload zip bundle file. Please check demo for more.
   }
 });
