@@ -72,6 +72,10 @@
 
 import React from 'react';
 import Tree from 'react-d3-tree';
+import SideBar from '../SideBar/SideBar.jsx';
+import Header from '../header/header.jsx'
+import Grid from '@material-ui/core/Grid';
+
 
 const orgChart = {
   name: "JM-EX",
@@ -127,8 +131,30 @@ const orgChart = {
 
 export default function OrgChartTree(){
   return (
-    <div id="treeWrapper" style={{ width: '100em', height: '50em' , overflow: 'visible'}}>
+    <Grid container spacing= {1}>
+      <Grid item xs={12}>
+      <Header/>
+      </Grid>
+      <Grid item xs={2}>
+      <SideBar />
+      </Grid>
+      <Grid item xs={10}>
+      <div id="treeWrapper" style={{ width: '100em', height: '50em' }}>
     <Tree data={orgChart} />
   </div>
+      </Grid>
+  </Grid>
   )
 }
+
+// export default function OrgChartTree(){
+//   return (
+//     <div style = {{display: 'grid'}}>
+//     <div id="treeWrapper" style={{ width: '100em', height: '50em' }}>
+//     <Header style = {{gridRow: '1'}}/>
+//     <Tree data={orgChart} style = {{gridRow: '2'}}/>
+//     <SideBar style = {{gridRow: '2', gridCol  }} />
+//   </div>
+//   </div>
+//   )
+// }

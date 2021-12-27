@@ -7,15 +7,11 @@ const url = require('url')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
-let mainWindow
+let mainWindow;
 
 // Keep a reference for dev mode
 let dev = false
 
-// Broken:
-// if (process.defaultApp || /[\\/]electron-prebuilt[\\/]/.test(process.execPath) || /[\\/]electron[\\/]/.test(process.execPath)) {
-//   dev = true
-// }
 
 if (process.env.NODE_ENV !== undefined && process.env.NODE_ENV === 'development') {
   dev = true
@@ -43,7 +39,7 @@ function createWindow() {
   })
 
   // and load the index.html of the app.
-  let indexPath
+  let indexPath;
 
   if (dev && process.argv.indexOf('--noDevServer') === -1) {
     indexPath = url.format({
