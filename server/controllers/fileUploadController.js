@@ -1,21 +1,24 @@
-const path = require('path');
-const fs = require('fs');
-
+// const path = require('path');
+// const fs = require('fs');
+const { Client } = require('cassandra-driver')
 const fileUploadController = {};
 
-let filePath;
-
 fileUploadController.upload = (req, res, next) => {
-  try {
-    filePath = req.body;
+  const { username, password, filepath } = req.body;
     console.log(req.body);
-  } catch (err) {
-    console.log(error);
-    next({
-      log: error
+      const client = new Client({
+        cloud: { secureConnectBundle: filepath },
+        credentials: { username: username, password: password }
     });
-  }
+    client.connect()
+    .then(console.log('connected'))
+    .then(console.log(client.execute("SELECT * FROM system.local")));
+    // const rs = client.execute("SELECT * FROM system.local")
+    // .then(console.log(`Your cluster returned ${rs.rowLength} row(s)`));
 };
-module.exports = fileUploadController, { upload: filePath };
+ 
+
+  // await client.shutdown();
+module.exports = fileUploadController;
 
 // export a var for use in astraDBmodels
