@@ -19,11 +19,6 @@ const SideBarStyle = styled.div`
 function SideBar() {
     return (
         <SideBarStyle>
-            <NavButton
-                key='SideButton0'
-                className='upload'
-                view='Upload'
-            />
             <Link to="/tree">
             <NavButton
                 key='SideButton1'
