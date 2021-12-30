@@ -6,9 +6,16 @@ const fileUploadController = {};
 fileUploadController.upload = (req, res, next) => {
   const { username, password, filepath } = req.body;
     console.log(req.body);
-      const client = new Client({
-        cloud: { secureConnectBundle: filepath },
-        credentials: { username: username, password: password }
+  if(!username || !password || !filepath) {
+    return next({
+    log: 'fileuploadController.upload connection error',
+    status: 500,
+    message: { err: 'Error connecting' },
+  });
+  }  
+  const client = new Client({
+    cloud: { secureConnectBundle: filepath },
+    credentials: { username: username, password: password }
     });
     client.connect()
     .then(console.log('connected'))
