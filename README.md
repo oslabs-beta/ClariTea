@@ -48,7 +48,7 @@ Alexis Smith <a href="https://www.linkedin.com/in/atsmith29/"><img align="left" 
 Brit Lim <a href="https://www.linkedin.com/in/brit-lim/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Brit Lim | LinkedIn" width="21px"/></a></br>
 Kirsten Coronado <a href="https://www.linkedin.com/in/kirstencoronado/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Kirsten Coronado | LinkedIn" width="21px"/></a></br>
 Peyton Pedersen <a href="https://www.linkedin.com/in/peyton-pedersen-b6019a1a6/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Peyton Pedersen | LinkedIn" width="21px"/></a></br>
-Phillip Yoo <a href=""><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Peyton Pedersen | LinkedIn" width="21px"/></a></br>
+Phillip Yoo <a href="https://www.linkedin.com/in/phillipyoo218"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Phillip Yoo | LinkedIn" width="21px"/></a></br>
 
 
 </br>
