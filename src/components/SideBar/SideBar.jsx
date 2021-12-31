@@ -32,12 +32,12 @@ function SideBar() {
                     view='Visualize'
                 />
             </Link>
-            <Link to="/repTree">
-            <NavButton
-                key='SideButton2'
-                className='Replication Factor'
-                view='Replication Factor'
-            />
+            <Link to="/repTree" style={{ textDecoration: 'none', color: 'black' }}>
+                <NavButton
+                    key='SideButton2'
+                    className='Replication Factor'
+                    view='Replication Factor'
+                />
             </Link>
         </SideBarStyle>
     )
