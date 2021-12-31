@@ -3,13 +3,14 @@ import { Navigate } from 'react-router';
 import axios from 'axios';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import regeneratorruntime from 'regenerator-runtime';
+import SideBar from './SideBar.jsx';
+import Header from '../header/header.jsx';
 
 function ConnectForm() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [filepath, setFilepath] = useState('');
   const [connected, setConnected] = useState(false);
-  // const [user_id, setUserId] = useState('');
   let error;
   const navigate = useNavigate();
 
@@ -17,25 +18,29 @@ function ConnectForm() {
     e.preventDefault();
     const reqOptions = { username, password, filepath };
     const response = await axios.post('/api/fileUpload', reqOptions);
-    if (response.data.error) error = response.data.error;
-    else {
-      console.log('connected');
+    if (response.data.error) {
+    error = response.data.error
+    alert('Error occurred while connecting', error);
+    }
+    if (response.data.success) {
+      alert('Connected');
       setConnected(true);
       navigate('/tree')
-      // , { state: { user_id: response.data.user_id } });
     }
   };
 
+
   return (
-    <div>
-      <h1>Connect</h1>
+    <div >
+      <Header />
       <form className="connectForm" onSubmit={handleSubmit}>
+        <SideBar />
         <label id="username">Username </label>
-        <input type="text" onChange={(e) => setUsername(e.target.value)} />
+        <input required type="text" onChange={(e) => setUsername(e.target.value)} />
         <label id="password">Password </label>
-        <input type="text" onChange={(e) => setPassword(e.target.value)} />
+        <input required type="text" onChange={(e) => setPassword(e.target.value)} />
         <label id="filepath">Filepath </label>
-        <input type="text" onChange={(e) => setFilepath(e.target.value)} />
+        <input required type="text" onChange={(e) => setFilepath(e.target.value)} />
         <button id="connectBtn" type="submit">
           Connect
         </button>
@@ -43,6 +48,6 @@ function ConnectForm() {
       <div>{error}</div>
     </div>
   );
-}
+};
 
 export default ConnectForm;
