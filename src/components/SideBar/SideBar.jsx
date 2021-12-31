@@ -32,11 +32,13 @@ function SideBar() {
                     view='Visualize'
                 />
             </Link>
+            <Link to="/repTree">
             <NavButton
                 key='SideButton2'
-                className='customize'
-                view='Customize'
+                className='Replication Factor'
+                view='Replication Factor'
             />
+            </Link>
         </SideBarStyle>
     )
 }
