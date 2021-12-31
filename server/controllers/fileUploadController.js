@@ -12,20 +12,36 @@ fileUploadController.upload = (req, res, next) => {
     status: 500,
     message: { err: 'Error connecting' },
   });
-  }  
-  const client = new Client({
-    cloud: { secureConnectBundle: filepath },
-    credentials: { username: username, password: password }
-    });
-    client.connect()
-    .then(console.log('connected'))
-    .then(console.log(client.execute("SELECT * FROM system.local")));
-    // const rs = client.execute("SELECT * FROM system.local")
-    // .then(console.log(`Your cluster returned ${rs.rowLength} row(s)`));
-};
+  }else {
+  const run = async () => {
+    try {
+    const client = new Client({
+      cloud: { secureConnectBundle: filepath },
+      credentials: { username: username, password: password }
+      });
+    await client.connect()
+    const rs = await client.execute("SELECT * FROM system.local")
+    console.log(`Your cluster returned ${rs.rowLength} row(s)`);
+    await client.shutdown();
+  }
+  catch(err) {
+    return (err, 'error');
+  }
+}  
+run();
+}};
  
-
-  // await client.shutdown();
 module.exports = fileUploadController;
 
+//Promise chain for connecting
+//     client.connect()
+//     .then(console.log('connected'))
+//     .then(console.log(client.execute("SELECT * FROM system.local")));
+//     // .then(console.log(`Your cluster returned ${rs.rowLength} row(s)`));
+// };
+
+
 // export a var for use in astraDBmodels
+
+
+  

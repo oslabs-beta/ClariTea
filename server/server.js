@@ -6,29 +6,28 @@ const port = process.env.PORT || 3000;
 const cassandra = require('cassandra-driver');
 // const router = require('./routes/apiRouter.js');
 const fileUploadController = require('./controllers/fileUploadController.js')
-// const mockResponse = {
-//   Hello: 'World',
-//   boiler: 'plate'
-// };
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 
-// const path = 'server/secure-connect-servertest.zip';
+
 app.post('/api/fileUpload', fileUploadController.upload, (req, res) => {
   return res.status(200).json('User connected') 
 });
+
+
+//THE LOGIC BELOW HAS BEEN MOVED TO FILEUPLOADCONTROLLER MIDDLEWARE
+
+// const path = 'server/secure-connect-servertest.zip';
 // const { Client } = require('cassandra-driver');
 // async function run () {const client = new Client({
 // cloud: { secureConnectBundle: path },
 // credentials: { username: 'YKZipmZFWjYIQsiXSeTHDkjB', password: 'vHW4ZsCoBvF678I9wxKA,+W-P24p20YLFlxKNyxkR9--1jl_IP0gC7WOz2uFDPJCbaL.jr02EzD2PzwHmaHkJf-go8LR-aiIOZih+gTkH8L32KwOzCdfHZ9fj8REIYhZ' }});
-
-
 // await client.connect();
 // // Execute a query
 // const rs = await client.execute("SELECT * FROM system.local");
 // console.log(`Your cluster returned ${rs.rowLength} row(s)`);
-
 // await client.shutdown();
 // }
 
