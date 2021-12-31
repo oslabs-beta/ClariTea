@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import NavButton from './Buttons.jsx'
 import { Link } from "react-router-dom";
 
-
 // whole sidebar
 const SideBarStyle = styled.div`
   background-color: white;
@@ -19,18 +18,27 @@ const SideBarStyle = styled.div`
 function SideBar() {
     return (
         <SideBarStyle>
-            <Link to="/tree">
-            <NavButton
-                key='SideButton1'
-                className='visualize'
-                view='Visualize'
-            />
+            <Link to="/connect" style={{ textDecoration: 'none', color: 'black' }}>
+                <NavButton
+                    key='SideButton0'
+                    className='connect'
+                    view='Connect'
+                />
             </Link>
-            <NavButton
-                key='SideButton2'
-                className='customize'
-                view='Customize'
-            />
+            <Link to="/tree" style={{ textDecoration: 'none', color: 'black' }}>
+                <NavButton
+                    key='SideButton1'
+                    className='visualize'
+                    view='Visualize'
+                />
+            </Link>
+            <Link to="/repTree" style={{ textDecoration: 'none', color: 'black' }}>
+                <NavButton
+                    key='SideButton2'
+                    className='Replication Factor'
+                    view='Replication Factor'
+                />
+            </Link>
         </SideBarStyle>
     )
 }
