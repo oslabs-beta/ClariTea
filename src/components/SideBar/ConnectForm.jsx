@@ -3,6 +3,8 @@ import { Navigate } from 'react-router';
 import axios from 'axios';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import regeneratorruntime from 'regenerator-runtime';
+import SideBar from './SideBar.jsx';
+import Header from '../header/header.jsx';
 
 function ConnectForm() {
   const [username, setUsername] = useState('');
@@ -29,9 +31,10 @@ function ConnectForm() {
 
 
   return (
-    <div>
-      <h1>Connect</h1>
+    <div >
+      <Header />
       <form className="connectForm" onSubmit={handleSubmit}>
+        <SideBar />
         <label id="username">Username </label>
         <input required type="text" onChange={(e) => setUsername(e.target.value)} />
         <label id="password">Password </label>
