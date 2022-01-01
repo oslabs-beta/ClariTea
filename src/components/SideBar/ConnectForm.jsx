@@ -21,11 +21,10 @@ function ConnectForm() {
     const response = await axios.post('/api/fileUpload', reqOptions);
     if (response.data.error) error = response.data.error;
     if (response.data.results) {
-      console.log(results);
       setResults(response.data.results);
       console.log(response.data.results)
       setConnected(true);
-      navigate('/tree')
+      navigate('/tree', {state: { results: response.data.results }})
     }
   };
 
