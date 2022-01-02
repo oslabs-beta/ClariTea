@@ -11,6 +11,7 @@ function ConnectForm() {
   const [password, setPassword] = useState('');
   const [filepath, setFilepath] = useState('');
   const [connected, setConnected] = useState(false);
+  const [results, setResults] = useState('');
   let error;
   const navigate = useNavigate();
 
@@ -18,14 +19,12 @@ function ConnectForm() {
     e.preventDefault();
     const reqOptions = { username, password, filepath };
     const response = await axios.post('/api/fileUpload', reqOptions);
-    if (response.data.error) {
-    error = response.data.error
-    alert('Error occurred while connecting', error);
-    }
-    if (response.data.success) {
-      alert('Connected');
+    if (response.data.error) error = response.data.error;
+    if (response.data.results) {
+      setResults(response.data.results);
+      console.log(response.data.results)
       setConnected(true);
-      navigate('/tree')
+      navigate('/tree', {state: { results: response.data.results }})
     }
   };
 

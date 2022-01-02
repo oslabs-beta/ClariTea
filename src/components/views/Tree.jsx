@@ -77,6 +77,246 @@ import Header from '../header/header.jsx'
 import Grid from '@material-ui/core/Grid';
 
 
+// const orgChart = {
+//   name: "Movies",
+
+//   children: [
+//     {
+//       name: "Action",
+//       children: [
+    
+//           {
+//           name: "No Time to Die",
+//           children: [
+//            {
+//              name: "10-08-2021" 
+//             },
+//             {
+//               name: "87%"
+//             }
+//           ]
+//         },
+//         {
+//           name: "Free Guy",
+//           children: [
+//             {
+//               name: "08-13-2021"
+//             },
+//             {
+//               name: "91%"
+//             }
+//           ]
+//         }, 
+//         {
+//           name: "Spider-Man: Into the Spider-Verse",
+//           children: [
+//             {
+//               name: "12-14-2018"
+//             },
+//             {
+//               name: "87%"
+//             }
+//           ]
+//         }
+//       ]
+//     },
+//     {
+//       name: "Animation",
+//       children: [
+//         {
+//           name: "Your Name",
+//           children: [
+//             {
+//               name: "04-07-2017"
+//             },
+//             {
+//               name: "96%"
+//             }
+//           ]
+//         },
+//         {
+//           name: "Howl's Moving Castle",
+//           children: [
+//             {
+//               name: "06-17-2005"
+//             },
+//             {
+//               name: "96%"
+//             }
+//           ]
+//         }, 
+//         {
+//           name: "Spirited Away",
+//           children: [
+//             {
+//               name: "08-31-2002"
+//             },
+//             {
+//               name: "95%"
+//             }
+//           ]
+//         }
+//       ]
+//     },
+//     {
+//       name: "Comedy",
+//       children: [
+//         {
+//           name: 'Grown Ups',
+//           children: [
+//             {
+//               name: "06-25-2010"
+//             },
+//             {
+//               name: "90%"
+//             }
+//           ]
+//         },
+//         {
+//           name: '22 Jump Street',
+//           children: [
+//             {
+//               name: "06-13-2014"
+//             },
+//             {
+//               name: "86%"
+//             }
+//           ]
+//         },
+//         {
+//           name: 'Superbad',
+//           children: [
+//             {
+//               name: "08-17-2007"
+//             },
+//             {
+//               name: "92%"
+//             }
+//           ]
+//         }
+//       ]
+//     },
+//     {
+//       name: "Drama",
+//       children: [
+//         {
+//           name: "Little Women",
+//           children: [
+//             {
+//               name: "12-25-2019"
+//             },
+//             {
+//               name: "90%"
+//             }
+//           ]
+//         },
+//         {
+//           name: "Beautiful Boy",
+//           children: [
+//             {
+//               name: "09-07-2018"
+//             },
+//             {
+//               name: "81%"
+//             }
+//           ]
+//         },
+//         {
+//           name: "Dear Evan Hanson",
+//           children: [
+//             {
+//               name: "09-24-2021"
+//             },
+//             {
+//               name: "68%"
+//             }
+//           ]
+//         }
+//       ]
+//     },
+//     {
+//       name: "Sci-Fi",
+//       children: [
+//         {
+//           name: "The Matrix: Resurrections",
+//           children: [
+//             {
+//               name: "12-22-2021"
+//             },
+//             {
+//               name: "63%"
+//             }
+//           ]
+//         },
+//         {
+//           name: "Dune",
+//           children: [
+//             {
+//               name: "10-22-2021"
+//             },
+//             {
+//               name: "85%"
+//             }
+//           ]
+//         },
+//         {
+//           name: "Spider-Man: Far From Home",
+//           children: [
+//             {
+//               name: "06-26-2019"
+//             },
+//             {
+//               name: "86%"
+//             }
+//           ]
+//         }
+//       ]
+//     }, 
+//     {
+//       name: "Thriller",
+//       children: [
+//         {
+//           name: "I Care A Lot.",
+//           children: [
+//             {
+//               name: "02-19-2021"
+//             },
+//             {
+//               name: "58%"
+//             }
+//           ]
+//         },
+//         {
+//           name: "Ready or Not",
+//           children: [
+//             {
+//               name: "07-27-2019"
+//             },
+//             {
+//               name: "87%"
+//             }
+//           ]
+//         },
+//         {
+//           name: "Parasite",
+//           attributes: {
+//             "cool": "beans",
+//             "more": "stuff"
+//           },
+//           children: [
+//             {
+//               name: "05-30-2019"
+//             },
+//             {
+//               name: "90%"
+//             }
+//           ]
+//         }
+//       ]
+//     }
+//   ]
+// };
+
 const orgChart = {
   name: "Movies",
 
@@ -86,37 +326,25 @@ const orgChart = {
       children: [
     
           {
-          name: "No Time to Die",
-          children: [
-           {
-             name: "10-08-2021" 
-            },
-            {
-              name: "87%"
-            }
-          ]
+          name: "Title: No Time to Die",
+          attributes: {
+            "Released Date": "10-08-2021",
+            "Rating": "87%"
+          }
         },
         {
-          name: "Free Guy",
-          children: [
-            {
-              name: "08-13-2021"
-            },
-            {
-              name: "91%"
-            }
-          ]
+          name: "Title: Free Guy",
+          attributes: {
+            "Released Date": "08-13-2021",
+            "Rating": "91%"
+          }
         }, 
         {
-          name: "Spider-Man: Into the Spider-Verse",
-          children: [
-            {
-              name: "12-14-2018"
-            },
-            {
-              name: "87%"
-            }
-          ]
+          name: "Title: Spider-Man: Into the Spider-Verse",
+          attributes: {
+            "Released Date": "12-14-2018",
+            "Rating": "87%"
+          }
         }
       ]
     },
@@ -124,37 +352,25 @@ const orgChart = {
       name: "Animation",
       children: [
         {
-          name: "Your Name",
-          children: [
-            {
-              name: "04-07-2017"
-            },
-            {
-              name: "96%"
-            }
-          ]
+          name: "Title: Your Name",
+          attributes: {
+            "Released Date": "04-07-2017",
+            "Rating": "96%"
+          }
         },
         {
-          name: "Howl's Moving Castle",
-          children: [
-            {
-              name: "06-17-2005"
-            },
-            {
-              name: "96%"
-            }
-          ]
+          name: "Title: Howl's Moving Castle",
+          attributes: {
+            "Released Date": "06-17-2005",
+            "Rating": "96%"
+          }
         }, 
         {
-          name: "Spirited Away",
-          children: [
-            {
-              name: "08-31-2002"
-            },
-            {
-              name: "95%"
-            }
-          ]
+          name: "Title: Spirited Away",
+          attributes: {
+            "Released Date": "08-31-2002",
+            "Rating": "95%"
+          }
         }
       ]
     },
@@ -162,37 +378,25 @@ const orgChart = {
       name: "Comedy",
       children: [
         {
-          name: 'Grown Ups',
-          children: [
-            {
-              name: "06-25-2010"
-            },
-            {
-              name: "90%"
-            }
-          ]
+          name: 'Title: Grown Ups',
+          attributes: {
+            "Released Date": "06-25-2010",
+            "Rating": "90%"
+          }
         },
         {
-          name: '22 Jump Street',
-          children: [
-            {
-              name: "06-13-2014"
-            },
-            {
-              name: "86%"
-            }
-          ]
+          name: 'Title: 22 Jump Street',
+          attributes: {
+            "Released Date": "06-13-2014",
+            "Rating": "86%"
+          }
         },
         {
-          name: 'Superbad',
-          children: [
-            {
-              name: "08-17-2007"
-            },
-            {
-              name: "92%"
-            }
-          ]
+          name: 'Title: Superbad',
+          attributes: {
+            "Released Date": "08-17-2007",
+            "Rating": "92%"
+          }
         }
       ]
     },
@@ -200,37 +404,25 @@ const orgChart = {
       name: "Drama",
       children: [
         {
-          name: "Little Women",
-          children: [
-            {
-              name: "12-25-2019"
-            },
-            {
-              name: "90%"
-            }
-          ]
+          name: "Title: Little Women",
+          attributes: {
+            "Released Date": "12-25-2019",
+            "Rating": "90%"
+          }
         },
         {
-          name: "Beautiful Boy",
-          children: [
-            {
-              name: "09-07-2018"
-            },
-            {
-              name: "81%"
-            }
-          ]
+          name: "Title: Beautiful Boy",
+          attributes: {
+            "Released Date": "09-07-2018",
+            "Rating": "81%"
+          }
         },
         {
-          name: "Dear Evan Hanson",
-          children: [
-            {
-              name: "09-24-2021"
-            },
-            {
-              name: "68%"
-            }
-          ]
+          name: "Title: Dear Evan Hanson",
+          attributes: {
+            "Released Date": "09-24-2021",
+            "Rating": "68%"
+          }
         }
       ]
     },
@@ -238,37 +430,25 @@ const orgChart = {
       name: "Sci-Fi",
       children: [
         {
-          name: "The Matrix: Resurrections",
-          children: [
-            {
-              name: "12-22-2021"
-            },
-            {
-              name: "63%"
-            }
-          ]
+          name: "Title: The Matrix: Resurrections",
+          attributes: {
+            "Released Date": "12-22-2021",
+            "Rating": "63%"
+          }
         },
         {
-          name: "Dune",
-          children: [
-            {
-              name: "10-22-2021"
-            },
-            {
-              name: "85%"
-            }
-          ]
+          name: "Title: Dune",
+          attributes: {
+            "Released Date": "10-22-2021",
+            "Rating": "85%"
+          }
         },
         {
-          name: "Spider-Man: Far From Home",
-          children: [
-            {
-              name: "06-26-2019"
-            },
-            {
-              name: "86%"
-            }
-          ]
+          name: "Title: Spider-Man: Far From Home",
+          attributes: {
+            "Released Date": "06-26-2019",
+            "Rating": "86%"
+          }
         }
       ]
     }, 
@@ -276,37 +456,25 @@ const orgChart = {
       name: "Thriller",
       children: [
         {
-          name: "I Care A Lot.",
-          children: [
-            {
-              name: "02-19-2021"
-            },
-            {
-              name: "58%"
-            }
-          ]
+          name: "Title: I Care A Lot.",
+          attributes: {
+            "Released Date": "02-19-2021",
+            "Rating": "58%"
+          },
         },
         {
-          name: "Ready or Not",
-          children: [
-            {
-              name: "07-27-2019"
-            },
-            {
-              name: "87%"
-            }
-          ]
+          name: "Title: Ready or Not",
+          attributes: {
+            "Released Date": "07-27-2019",
+            "Rating": "87%"
+          }
         },
         {
-          name: "Parasite",
-          children: [
-            {
-              name: "05-30-2019"
-            },
-            {
-              name: "90%"
-            }
-          ]
+          name: "Title: Parasite",
+          attributes: {
+            "Released Date": "05-30-2019",
+            "Rating": "90%"
+          }
         }
       ]
     }
