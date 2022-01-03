@@ -25,18 +25,25 @@ function SideBar() {
                     view='Connect'
                 />
             </Link>
-            <Link to="/tree" style={{ textDecoration: 'none', color: 'black' }}>
+            <Link to="/schema" style={{ textDecoration: 'none', color: 'black' }}>
                 <NavButton
                     key='SideButton1'
+                    className='datamodel'
+                    view='Data Modeling'
+                />
+            </Link>
+            <Link to="/tree" style={{ textDecoration: 'none', color: 'black' }}>
+                <NavButton
+                    key='SideButton2'
                     className='visualize'
                     view='Visualize'
                 />
             </Link>
             <Link to="/repTree" style={{ textDecoration: 'none', color: 'black' }}>
                 <NavButton
-                    key='SideButton2'
+                    key='SideButton3'
                     className='Replication Factor'
-                    view='Replication Factor'
+                    view='Replication Factor'ß
                 />
             </Link>
         </SideBarStyle>

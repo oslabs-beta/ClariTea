@@ -8,15 +8,15 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
 /****CQL DATA TYPES TABLE****/
-function createData(name, genre, title, releasedate, avgrating) {
+function createDataTypes(name, genre, title, releasedate, avgrating) {
   return { name, genre, title, releasedate, avgrating };
 }
 
 const rows = [
-  createData('Data Type', 'text', 'text', 'date', 'blob'),
+  createDataTypes('Data Type', 'text', 'text', 'date', 'blob'),
 ];
 
-export default function BasicTable() {
+export default function DataTypeTable() {
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
