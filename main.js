@@ -64,11 +64,15 @@ function createWindow() {
 
     // Open the DevTools automatically if developing
     if (dev) {
-      const { default: installExtension, REACT_DEVELOPER_TOOLS } = require('electron-devtools-installer')
+      // /*
+      const { default: installExtension, REACT_DEVELOPER_TOOLS, REDUX_DEVTOOLS } = require('electron-devtools-installer')
 
-      installExtension(REACT_DEVELOPER_TOOLS)
-        .catch(err => console.log('Error loading React DevTools: ', err))
+      installExtension(REACT_DEVELOPER_TOOLS, REDUX_DEVTOOLS)
+        .catch(err => console.log('Error loading React & Redux DevTools: ', err))
       mainWindow.webContents.openDevTools()
+      // */
+      // /*
+      // */
     }
   })
 
