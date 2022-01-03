@@ -9,7 +9,8 @@
     "start": "electron-forge start ",
     "build": "cross-env NODE_ENV=production webpack --config webpack.build.config.js --mode production",
     "package": "npm run build",
-    "postpackage": "electron-packager ./ --out=./builds"
+    "postpackage": "electron-packager ./ --out=./builds",
+    "test": "jest --verbose"
   },
   "repository": {
     "type": "git",
