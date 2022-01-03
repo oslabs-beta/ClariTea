@@ -1,8 +1,6 @@
-<h1 align="center">ClariTea</h1>
-
-
-<h3 align="center">
-A visualization app created to help developers understand how Apache Cassandra's data model is based on and optimized for querying.
+<p align="center"><img src="https://media.giphy.com/media/LnXpLY2qvtU17H5EQD/giphy.gif" "></p>
+<h1 align="left">ClariTea</h1>
+A visualization application created to help developers explore and understand their Apache Cassandra clusters.
 </h3>
 
 </br>
@@ -44,11 +42,11 @@ A visualization app created to help developers understand how Apache Cassandra's
 
 
 ### 🤝 Connect with us:
-Alexis Smith <a href="https://www.linkedin.com/in/atsmith29/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Alexis Smith | LinkedIn" width="21px"/></a></br>
-Brit Lim <a href="https://www.linkedin.com/in/brit-lim/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Brit Lim | LinkedIn" width="21px"/></a></br>
-Kirsten Coronado <a href="https://www.linkedin.com/in/kirstencoronado/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Kirsten Coronado | LinkedIn" width="21px"/></a></br>
-Peyton Pedersen <a href="https://www.linkedin.com/in/peyton-pedersen-b6019a1a6/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Peyton Pedersen | LinkedIn" width="21px"/></a></br>
-Phillip Yoo <a href="https://www.linkedin.com/in/phillipyoo218"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Phillip Yoo | LinkedIn" width="21px"/></a></br>
+ Alexis Smith <a href="https://www.linkedin.com/in/atsmith29/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Alexis Smith | LinkedIn" width="21px"/></a></br>
+ Brit Lim <a href="https://www.linkedin.com/in/brit-lim/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Brit Lim | LinkedIn" width="21px"/></a></br>
+ Kirsten Coronado <a href="https://www.linkedin.com/in/kirstencoronado/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Kirsten Coronado | LinkedIn" width="21px"/></a></br>
+ Peyton Pedersen <a href="https://www.linkedin.com/in/peyton-pedersen-b6019a1a6/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Peyton Pedersen | LinkedIn" width="21px"/></a></br>
+ Phillip Yoo <a href="https://www.linkedin.com/in/phillipyoo218"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Phillip Yoo | LinkedIn" width="21px"/></a></br>
 
 
 </br>
