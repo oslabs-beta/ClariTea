@@ -9,7 +9,12 @@
     "start": "electron-forge start ",
     "build": "cross-env NODE_ENV=production webpack --config webpack.build.config.js --mode production",
     "package": "npm run build",
-    "postpackage": "electron-packager ./ --out=./builds"
+    "postpackage": "electron-packager ./ --out=./builds",
+    "test": "jest --verbose"
+  },
+  "jest": {
+    "globalSetup": "./jest-setup.js",
+    "globalTeardown": "./jest-teardown.js"
   },
   "repository": {
     "type": "git",
@@ -32,6 +37,7 @@
     "concurrently": "^6.5.1",
     "d3": "^7.2.1",
     "express": "^4.17.1",
+    "jest": "^27.4.5",
     "nodemon": "^2.0.15",
     "path": "^0.12.7",
     "react": "^17.0.2",
