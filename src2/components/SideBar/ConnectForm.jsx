@@ -34,8 +34,7 @@ function ConnectForm() {
       if (response.data.results) {
         setResults(response.data.results);
         console.log(response.data.results)
-        setConnected(true);
-        dispatch(submitConnectActionCreator(reqOptions));
+        dispatch(submitConnectActionCreator(reqOptions)); // -->         setConnected(true);
         navigate('/tree', {state: { results: response.data.results }})
       }
   };

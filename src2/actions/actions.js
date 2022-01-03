@@ -14,9 +14,8 @@
  import { tree } from 'd3';
 import * as types from '../constants/actionTypes';
 
- export const fileUpload = (input) => ({
+ export const fileUpload = () => ({
    type: types.CONNECT_FILE,
-   payload: input
  })
 
  export const renderTree = (input) => ({
