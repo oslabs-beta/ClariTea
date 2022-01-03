@@ -9,11 +9,11 @@
  * ************************************
  */
  import { combineReducers } from 'redux';
- 
+ import visualReducer from './visualReducer';
  
  
  const reducers = combineReducers({
-
+  visual: visualReducer
  });
  
  export default reducers;
