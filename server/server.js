@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true}));
 
 
 app.post('/api/fileUpload', fileUploadController.upload, (req, res) => {
-  return res.status(200).json('User connected') 
+  return res.status(200).json({ results: res.locals.results }) 
 });
 
 

@@ -318,6 +318,7 @@ import { fontFamily } from '@mui/system';
 //   ]
 // };
 
+
 const orgChart = {
   name: "Movies",
 
@@ -329,7 +330,7 @@ const orgChart = {
           {
           name: "Title: No Time to Die",
           attributes: {
-            "Released": "10-08-2021",
+            "Released": `"10-08-2021"`,
             "Rating": "87%"
           }
         },
@@ -369,7 +370,7 @@ const orgChart = {
         {
           name: "Title: Spirited Away",
           attributes: {
-            "Released": "08-31-2002",
+            Released: "08-31-2002",
             "Rating": "95%"
           }
         }
@@ -513,10 +514,7 @@ export default function OrgChartTree(){
       </Grid>
       <Grid item xs={10}>
       <div id="treeWrapper" style={{ width: '100em', height: '50em'}}>
-    <Tree data={orgChart}   
-        rootNodeClassName="node__root"
-        branchNodeClassName="node__branch"
-        leafNodeClassName="node__leaf" 
+    <Tree data={orgChart}    
         renderCustomNodeElement={styleNodes}
         />
   </div>

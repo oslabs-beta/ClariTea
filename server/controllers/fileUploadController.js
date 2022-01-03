@@ -12,7 +12,8 @@ fileUploadController.upload = (req, res, next) => {
     status: 500,
     message: { err: 'Error connecting' },
   });
-  }else {
+  }
+
   const run = async () => {
     try {
     const client = new Client({
@@ -20,16 +21,23 @@ fileUploadController.upload = (req, res, next) => {
       credentials: { username: username, password: password }
       });
     await client.connect()
-    const rs = await client.execute("SELECT * FROM system.local")
-    console.log(`Your cluster returned ${rs.rowLength} row(s)`);
+    //Currently limited query to 3 results
+    const rs = await client.execute("SELECT * FROM movies.movies_and_tv LIMIT 3")
+    console.log(rs);
+    res.locals.results = rs;
     await client.shutdown();
+    return next();
   }
   catch(err) {
-    return (err, 'error');
-  }
-}  
+    return next({
+      log: 'fileuploadController.upload connection error',
+      status: 500,
+      message: { err: 'Error connecting' },
+    });
+  };
+};  
 run();
-}};
+};
  
 module.exports = fileUploadController;
 
