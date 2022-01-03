@@ -12,3 +12,5 @@ export const CONNECT_FILE = 'CONNECT_FILE';
 export const RENDER_TREE = 'RENDER_TREE';
 
 export const REPLICATION_FACTOR = 'REPLICATION_FACTOR';
+
+export const RENDER_SCHEMA = 'RENDER_SCHEMA';

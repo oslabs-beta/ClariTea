@@ -19,11 +19,17 @@ import * as types from '../constants/actionTypes';
    payload: input
  })
 
- export const renderTree = () => ({
-   type: types.RENDER_TREE
+ export const renderTree = (input) => ({
+   type: types.RENDER_TREE,
+   payload: input
  })
  
  export const replicationFactor = (input) => ({
    type: types.REPLICATION_FACTOR,
+   payload: input
+ })
+
+ export const renderSchema = (input) => ({
+   type: types.RENDER_SCHEMA,
    payload: input
  })
