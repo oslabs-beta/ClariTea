@@ -17,9 +17,10 @@ const SideBarStyle = styled.div`
 
 function SideBar() {
     return (
-        <SideBarStyle>
-            <Link to="/connect" style={{ textDecoration: 'none', color: 'black' }}>
+        <SideBarStyle style={{ backgroundColor: '#F0F0F0'}}>
+            <Link to="/connect" style={{ textDecoration: 'none', color: 'black'  }}>
                 <NavButton
+                style={{ backgroundColor: '#FF33FF', color: 'white' , fontFamily:'Sans-Serif'}}
                     key='SideButton0'
                     className='connect'
                     view='Connect'
@@ -27,6 +28,7 @@ function SideBar() {
             </Link>
             <Link to="/schema" style={{ textDecoration: 'none', color: 'black' }}>
                 <NavButton
+                    style={{ backgroundColor: '#9933FF' , color: 'white', fontFamily:'Sans-Serif' }}
                     key='SideButton1'
                     className='datamodel'
                     view='Data Modeling'
@@ -34,16 +36,18 @@ function SideBar() {
             </Link>
             <Link to="/tree" style={{ textDecoration: 'none', color: 'black' }}>
                 <NavButton
+                style={{ backgroundColor: '#FF3399' , color: 'white', fontFamily:'Sans-Serif'}}
                     key='SideButton2'
                     className='visualize'
                     view='Visualize'
                 />
             </Link>
-            <Link to="/repTree" style={{ textDecoration: 'none', color: 'black' }}>
+            <Link to="/repTree" style={{ textDecoration: 'none', color: 'black'}}>
                 <NavButton
+                    style={{ backgroundColor: '#33FFFF', color: 'white', fontFamily:'Sans-Serif'}}
                     key='SideButton3'
                     className='Replication Factor'
-                    view='Replication Factor'ß
+                    view='Replication Factor'
                 />
             </Link>
         </SideBarStyle>
