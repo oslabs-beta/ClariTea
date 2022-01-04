@@ -18,8 +18,8 @@ const SideBarStyle = styled.div`
 function SideBar() {
     return (
         <SideBarStyle>
-            <Link to="/connect" style={{ textDecoration: 'none', color: 'black' }}>
-                <NavButton
+            <Link to="/connect" style={{ textDecoration: 'none', color: 'black'}}>
+                <NavButton 
                     key='SideButton0'
                     className='connect'
                     view='Connect'
