@@ -3,9 +3,9 @@
 // Here we will be unit testing the 3 main database functions from server/db/markets.js
 const fs = require('fs');
 const path = require('path');
-const db = require('../server/db/markets.js');
+const db = require('../server/db/cluster.js');
 
-const testJsonFile = path.resolve(__dirname, '../server/db/markets.test.json');
+const testJsonFile = path.resolve(__dirname, '../server/db/cluster.test.json');
 
 /**
  * Like many testing frameworks, in Jest we use the "describe" function to
