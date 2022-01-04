@@ -29,6 +29,8 @@ const Button = styled.div`
   margin: auto;
   margin-left: calc(15.5px + .25vw);
   margin-top: 25px;
+  
+  
 `;
 
 
@@ -39,14 +41,14 @@ const Icon = styled.span`
 
 
 const NavButton = ({ className, click, view, style }) => {
-    return (
-        <ButtonContainer style={style} onClick={click} id={view}>
-            <Button>
-                <Icon><i className={className} /></Icon>
-                {view}
-            </Button>
-        </ButtonContainer>
-    )
+  return (
+    <ButtonContainer style={style} onClick={click} id={view}>
+      <Button>
+        <Icon><i className={className} /></Icon>
+        {view}
+      </Button>
+    </ButtonContainer>
+  )
 }
 
 export default NavButton;
