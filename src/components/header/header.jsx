@@ -10,7 +10,7 @@ import logoblack from '../assets/logoblack.png'
 export default function Header() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" style={{paddingLeft: "0px"}}> 
+      <AppBar position="static" style={{backgroundColor: 'black', paddingLeft: "0px"}}> 
         <Toolbar className="toolbar-header" style={{paddingLeft: "0px"}}>
         <div>
         <img id="logoHeader" src={logoblack} />
