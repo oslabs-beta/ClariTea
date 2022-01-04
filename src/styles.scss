@@ -5,6 +5,11 @@
 }
 
 
+.Button.hover{
+  background-color: white;
+}
+
+
 .node__root > circle {
   fill: #0000ff;
 
@@ -20,6 +25,19 @@
   /* Let's also make the radius of leaf nodes larger */
 }
 
-.tableBG {
-  background-color: #0000ff;
+#logoHeader {
+  display: flex;
+  margin-left: 0px;
+  align-self: flex-start;
+  padding-left: 0px;
+  max-height: 90px;
+  width: 200px;
 }
+
+.toolbar-header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+

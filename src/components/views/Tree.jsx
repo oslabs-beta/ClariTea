@@ -485,17 +485,17 @@ const orgChart = {
 const styleNodes = ({nodeDatum, toggleNode}) => (
   <g>
    <circle r='15' strokeWidth='0' fill='#9933ff' onClick={toggleNode}></circle>
-    <text fontFamily='Sans' x='25' strokeWidth='1' fill='black'>
+    <text fontFamily='Sans-Serif' x='25' strokeWidth='1' fill='black'>
       {nodeDatum.name}
       
     </text>
     {nodeDatum.attributes?.Released && ( 
-      <text fill="black" x="25" dy="18" strokeWidth="1">
+      <text fill="black" x="25" dy="18" strokeWidth="1" fontFamily='Sans-Serif'>
         Released Date: {nodeDatum.attributes?.Released}
       </text>
     )}
      {nodeDatum.attributes?.Rating && (
-      <text fill="black" x="25" dy="35" strokeWidth="1">
+      <text fill="black" x="25" dy="35" strokeWidth="1" fontFamily='Sans-Serif'>
         Rating: {nodeDatum.attributes?.Rating}
       </text>
     )}
@@ -504,19 +504,16 @@ const styleNodes = ({nodeDatum, toggleNode}) => (
 
 export default function OrgChartTree(){                                                                                                                                                                                                                     
   return (
-    <Grid container spacing= {1}>
+    <Grid container spacing= {0}>
       <Grid item xs={12}>
       <Header/>
       </Grid>
-      <Grid item xs={2}>
+      <Grid item xs={1}>
       <SideBar />
       </Grid>
-      <Grid item xs={10}>
+      <Grid item xs={11}>
       <div id="treeWrapper" style={{ width: '100em', height: '50em'}}>
     <Tree data={orgChart}   
-        rootNodeClassName="node__root"
-        branchNodeClassName="node__branch"
-        leafNodeClassName="node__leaf" 
         renderCustomNodeElement={styleNodes}
         />
   </div>

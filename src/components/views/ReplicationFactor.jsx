@@ -17,21 +17,21 @@ const orgChart = {
                         {
                           name: "Title: I Care A Lot.",
                           attributes: {
-                            "Released Date": "02-19-2021",
+                            "Released": "02-19-2021",
                             "Rating": "58%"
                           }
                         },
                         {
                           name: "Title: Ready or Not",
                           attributes: {
-                            "Released Date": "07-27-2019",
+                            "Released": "07-27-2019",
                             "Rating": "87%"
                           }
                         },
                         {
                           name: "Title: Parasite",
                           attributes: {
-                            "Released Date": "05-30-2019",
+                            "Released": "05-30-2019",
                             "Rating": "90%"
                           }
                         }
@@ -43,21 +43,21 @@ const orgChart = {
                         {
                         name: "Title: No Time to Die",
                         attributes: {
-                            "Released Date": "10-08-2021",
+                            "Released": "10-08-2021",
                             "Rating": "87%"
                           }
                       },
                       {
                         name: "Title: Free Guy",
                         attributes: {
-                            "Released Date": "08-13-2021",
+                            "Released": "08-13-2021",
                             "Rating": "91%"
                           }
                       }, 
                       {
                         name: "Title: Spider-Man: Into the Spider-Verse",
                         attributes: {
-                            "Released Date": "12-14-2018",
+                            "Released": "12-14-2018",
                             "Rating": "87%"
                           }
                       }
@@ -69,21 +69,21 @@ const orgChart = {
                         {
                           name: "Title: Your Name",
                           attributes: {
-                            "Released Date": "04-07-2017",
+                            "Released": "04-07-2017",
                             "Rating": "96%"
                           }
                         },
                         {
                           name: "Title: Howl's Moving Castle",
                           attributes: {
-                            "Released Date": "06-17-2005",
+                            "Released": "06-17-2005",
                             "Rating": "96%"
                           }
                         }, 
                         {
                           name: "Title: Spirited Away",
                           attributes: {
-                            "Released Date": "08-31-2002",
+                            "Released": "08-31-2002",
                             "Rating": "95%"
                           }
                         }
@@ -100,21 +100,21 @@ const orgChart = {
                         {
                         name: "Title: No Time to Die",
                         attributes: {
-                            "Released Date": "10-08-2021",
+                            "Released": "10-08-2021",
                             "Rating": "87%"
                           }
                       },
                       {
                         name: "Title: Free Guy",
                         attributes: {
-                            "Released Date": "08-13-2021",
+                            "Released": "08-13-2021",
                             "Rating": "91%"
                           }
                       }, 
                       {
                         name: "Title: Spider-Man: Into the Spider-Verse",
                         attributes: {
-                            "Released Date": "12-14-2018",
+                            "Released": "12-14-2018",
                             "Rating": "87%"
                           }
                       }
@@ -126,21 +126,21 @@ const orgChart = {
                         {
                           name: "Title: Your Name",
                           attributes: {
-                            "Released Date": "04-07-2017",
+                            "Released": "04-07-2017",
                             "Rating": "96%"
                           }
                         },
                         {
                           name: "Title: Howl's Moving Castle",
                           attributes: {
-                            "Released Date": "06-17-2005",
+                            "Released": "06-17-2005",
                             "Rating": "96%"
                           }
                         }, 
                         {
                           name: "Title: Spirited Away",
                           attributes: {
-                            "Released Date": "08-31-2002",
+                            "Released": "08-31-2002",
                             "Rating": "95%"
                           }
                         }
@@ -152,21 +152,21 @@ const orgChart = {
                         {
                           name: 'Title: Grown Ups',
                           attributes: {
-                            "Released Date": "06-25-2010",
+                            "Released": "06-25-2010",
                             "Rating": "90%"
                           }
                         },
                         {
                           name: 'Title: 22 Jump Street',
                           attributes: {
-                            "Released Date": "06-13-2014",
+                            "Released": "06-13-2014",
                             "Rating": "86%"
                           }
                         },
                         {
                           name: 'Title: Superbad',
                           attributes: {
-                            "Released Date": "08-17-2007",
+                            "Released": "08-17-2007",
                             "Rating": "92%"
                           }
                         }
@@ -183,21 +183,21 @@ const orgChart = {
                         {
                           name: "Title: Your Name",
                           attributes: {
-                            "Released Date": "04-07-2017",
+                            "Released": "04-07-2017",
                             "Rating": "96%"
                           }
                         },
                         {
                           name: "Title: Howl's Moving Castle",
                           attributes: {
-                            "Released Date": "06-17-2005",
+                            "Released": "06-17-2005",
                             "Rating": "96%"
                           }
                         }, 
                         {
                           name: "Title: Spirited Away",
                           attributes: {
-                            "Released Date": "08-31-2002",
+                            "Released": "08-31-2002",
                             "Rating": "95%"
                           }
                         }
@@ -209,21 +209,21 @@ const orgChart = {
                         {
                           name: 'Title: Grown Ups',
                           attributes: {
-                            "Released Date": "06-25-2010",
+                            "Released": "06-25-2010",
                             "Rating": "90%"
                           }
                         },
                         {
                           name: 'Title: 22 Jump Street',
                           attributes: {
-                            "Released Date": "06-13-2014",
+                            "Released": "06-13-2014",
                             "Rating": "86%"
                           }
                         },
                         {
                           name: 'Title: Superbad',
                           attributes: {
-                            "Released Date": "08-17-2007",
+                            "Released": "08-17-2007",
                             "Rating": "92%"
                           }
                         }
@@ -235,21 +235,21 @@ const orgChart = {
                     {
                     name: "Title: Little Women",
                     attributes: {
-                        "Released Date": "12-25-2019",
+                        "Released": "12-25-2019",
                         "Rating": "90%"
                     }
                     },
                     {
                     name: "Title: Beautiful Boy",
                     attributes: {
-                        "Released Date": "09-07-2018",
+                        "Released": "09-07-2018",
                         "Rating": "81%"
                     }
                     },
                     {
                     name: "Title: Dear Evan Hanson",
                     attributes: {
-                        "Released Date": "09-24-2021",
+                        "Released": "09-24-2021",
                         "Rating": "68%"
                     }
                     }
@@ -266,21 +266,21 @@ const orgChart = {
                         {
                           name: 'Title: Grown Ups',
                           attributes: {
-                            "Released Date": "06-25-2010",
+                            "Released": "06-25-2010",
                             "Rating": "90%"
                           }
                         },
                         {
                           name: 'Title: 22 Jump Street',
                           attributes: {
-                            "Released Date": "06-13-2014",
+                            "Released": "06-13-2014",
                             "Rating": "86%"
                           }
                         },
                         {
                           name: 'Title: Superbad',
                           attributes: {
-                            "Released Date": "08-17-2007",
+                            "Released": "08-17-2007",
                             "Rating": "92%"
                           }
                         }
@@ -292,21 +292,21 @@ const orgChart = {
                         {
                         name: "Title: Little Women",
                         attributes: {
-                            "Released Date": "12-25-2019",
+                            "Released": "12-25-2019",
                             "Rating": "90%"
                         }
                         },
                         {
                         name: "Title: Beautiful Boy",
                         attributes: {
-                            "Released Date": "09-07-2018",
+                            "Released": "09-07-2018",
                             "Rating": "81%"
                         }
                         },
                         {
                         name: "Title: Dear Evan Hanson",
                         attributes: {
-                            "Released Date": "09-24-2021",
+                            "Released": "09-24-2021",
                             "Rating": "68%"
                         }
                         }
@@ -319,21 +319,21 @@ const orgChart = {
                         {
                             name: "Title: The Matrix: Resurrections",
                             attributes: {
-                            "Released Date": "12-22-2021",
+                            "Released": "12-22-2021",
                             "Rating": "63%"
                             }
                         },
                         {
                             name: "Title: Dune",
                             attributes: {
-                            "Released Date": "10-22-2021",
+                            "Released": "10-22-2021",
                             "Rating": "85%"
                             }
                         },
                         {
                             name: "Title: Spider-Man: Far From Home",
                             attributes: {
-                            "Released Date": "06-26-2019",
+                            "Released": "06-26-2019",
                             "Rating": "86%"
                             }
                         }
@@ -351,21 +351,21 @@ const orgChart = {
                         {
                         name: "Title: Little Women",
                         attributes: {
-                            "Released Date": "12-25-2019",
+                            "Released": "12-25-2019",
                             "Rating": "90%"
                         }
                         },
                         {
                         name: "Title: Beautiful Boy",
                         attributes: {
-                            "Released Date": "09-07-2018",
+                            "Released": "09-07-2018",
                             "Rating": "81%"
                         }
                         },
                         {
                         name: "Title: Dear Evan Hanson",
                         attributes: {
-                            "Released Date": "09-24-2021",
+                            "Released": "09-24-2021",
                             "Rating": "68%"
                         }
                         }
@@ -378,21 +378,21 @@ const orgChart = {
                         {
                             name: "Title: The Matrix: Resurrections",
                             attributes: {
-                            "Released Date": "12-22-2021",
+                            "Released": "12-22-2021",
                             "Rating": "63%"
                             }
                         },
                         {
                             name: "Title: Dune",
                             attributes: {
-                            "Released Date": "10-22-2021",
+                            "Released": "10-22-2021",
                             "Rating": "85%"
                             }
                         },
                         {
                             name: "Title: Spider-Man: Far From Home",
                             attributes: {
-                            "Released Date": "06-26-2019",
+                            "Released": "06-26-2019",
                             "Rating": "86%"
                             }
                         }
@@ -404,21 +404,21 @@ const orgChart = {
                         {
                           name: "Title: I Care A Lot.",
                           attributes: {
-                            "Released Date": "02-19-2021",
+                            "Released": "02-19-2021",
                             "Rating": "58%"
                           }
                         },
                         {
                           name: "Title: Ready or Not",
                           attributes: {
-                            "Released Date": "07-27-2019",
+                            "Released": "07-27-2019",
                             "Rating": "87%"
                           }
                         },
                         {
                           name: "Title: Parasite",
                           attributes: {
-                            "Released Date": "05-30-2019",
+                            "Released": "05-30-2019",
                             "Rating": "90%"
                           }
                         }
@@ -435,21 +435,21 @@ const orgChart = {
                       {
                         name: "Title: The Matrix: Resurrections",
                         attributes: {
-                          "Released Date": "12-22-2021",
+                          "Released": "12-22-2021",
                           "Rating": "63%"
                         }
                       },
                       {
                         name: "Title: Dune",
                         attributes: {
-                          "Released Date": "10-22-2021",
+                          "Released": "10-22-2021",
                           "Rating": "85%"
                         }
                       },
                       {
                         name: "Title: Spider-Man: Far From Home",
                         attributes: {
-                          "Released Date": "06-26-2019",
+                          "Released": "06-26-2019",
                           "Rating": "86%"
                         }
                       }
@@ -461,21 +461,21 @@ const orgChart = {
                         {
                           name: "Title: I Care A Lot.",
                           attributes: {
-                            "Released Date": "02-19-2021",
+                            "Released": "02-19-2021",
                             "Rating": "58%"
                           }
                         },
                         {
                           name: "Title: Ready or Not",
                           attributes: {
-                            "Released Date": "07-27-2019",
+                            "Released": "07-27-2019",
                             "Rating": "87%"
                           }
                         },
                         {
                           name: "Title: Parasite",
                           attributes: {
-                            "Released Date": "05-30-2019",
+                            "Released": "05-30-2019",
                             "Rating": "90%"
                           }
                         }
@@ -487,21 +487,21 @@ const orgChart = {
                         {
                         name: "Title: No Time to Die",
                         attributes: {
-                            "Released Date": "10-08-2021",
+                            "Released": "10-08-2021",
                             "Rating": "87%"
                           }
                       },
                       {
                         name: "Title: Free Guy",
                         attributes: {
-                            "Released Date": "08-13-2021",
+                            "Released": "08-13-2021",
                             "Rating": "91%"
                           }
                       }, 
                       {
                         name: "Title: Spider-Man: Into the Spider-Verse",
                         attributes: {
-                            "Released Date": "12-14-2018",
+                            "Released": "12-14-2018",
                             "Rating": "87%"
                           }
                       }
@@ -511,22 +511,38 @@ const orgChart = {
         }
     ]
   };
-  
+  const styleNodes = ({nodeDatum, toggleNode}) => (
+    <g>
+     <circle r='15' strokeWidth='0' fill='#9933ff' onClick={toggleNode}></circle>
+      <text fontFamily='Sans-Serif' x='25' strokeWidth='1' fill='black'>
+        {nodeDatum.name}
+        
+      </text>
+      {nodeDatum.attributes?.Released && ( 
+        <text fill="black" x="25" dy="18" strokeWidth="1" fontFamily='Sans-Serif'>
+          Released Date: {nodeDatum.attributes?.Released}
+        </text>
+      )}
+       {nodeDatum.attributes?.Rating && (
+        <text fill="black" x="25" dy="35" strokeWidth="1" fontFamily='Sans-Serif'>
+          Rating: {nodeDatum.attributes?.Rating}
+        </text>
+      )}
+    </g>
+  )
   export default function OrgChartTree(){
     return (
-      <Grid container spacing= {1}>
+      <Grid container spacing= {0}>
         <Grid item xs={12}>
         <Header/>
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={1}>
         <SideBar />
         </Grid>
-        <Grid item xs={10}>
+        <Grid item xs={11}>
         <div id="treeWrapper" style={{ width: '100em', height: '50em' }}>
       <Tree data={orgChart}   
-          rootNodeClassName="node__root"
-          branchNodeClassName="node__branch"
-          leafNodeClassName="node__leaf" 
+          renderCustomNodeElement={styleNodes}
           />
     </div>
         </Grid>
