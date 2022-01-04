@@ -536,10 +536,10 @@ const orgChart = {
         <Grid item xs={12}>
         <Header/>
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={1}>
         <SideBar />
         </Grid>
-        <Grid item xs={10}>
+        <Grid item xs={11}>
         <div id="treeWrapper" style={{ width: '100em', height: '50em' }}>
       <Tree data={orgChart}   
           renderCustomNodeElement={styleNodes}

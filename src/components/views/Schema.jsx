@@ -117,7 +117,7 @@ const rows = [
 
 export default function DataSnapshotTable() {
   return (
-    <Grid container spacing= {1}>
+    <Grid container spacing= {0}>
     <Grid item xs={12}>
     <Header/>
     </Grid>
