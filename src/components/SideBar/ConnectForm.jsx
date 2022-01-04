@@ -5,6 +5,12 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import regeneratorruntime from 'regenerator-runtime';
 import SideBar from './SideBar.jsx';
 import Header from '../header/header.jsx';
+import Grid from '@material-ui/core/Grid';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import TextField from '@mui/material/TextField';
+import logo from '../assets/ClariTea-Light_Mode_Flat.png'
+
 
 function ConnectForm() {
   const [username, setUsername] = useState('');
@@ -24,28 +30,49 @@ function ConnectForm() {
       setResults(response.data.results);
       console.log(response.data.results)
       setConnected(true);
-      navigate('/tree', {state: { results: response.data.results }})
+      navigate('/tree', { state: { results: response.data.results } })
     }
   };
 
 
   return (
-    <div >
-      <Header />
-      <form className="connectForm" onSubmit={handleSubmit}>
+
+    <Grid container spacing={1}>
+      <Grid item xs={12}>
+        <Header />
+      </Grid>
+      <Grid item xs={2}>
         <SideBar />
-        <label id="username">Username </label>
-        <input required type="text" onChange={(e) => setUsername(e.target.value)} />
-        <label id="password">Password </label>
-        <input required type="text" onChange={(e) => setPassword(e.target.value)} />
-        <label id="filepath">Filepath </label>
-        <input required type="text" onChange={(e) => setFilepath(e.target.value)} />
-        <button id="connectBtn" type="submit">
-          Connect
-        </button>
-      </form>
-      <div>{error}</div>
-    </div>
+      </Grid>
+      <Grid item xs={10}>
+        <center>
+          <img src={logo} width="200"></img>
+        </center>
+        <br />
+        <center>
+          <form className="connectForm" onSubmit={handleSubmit}>
+            <TextField id="username" label="Username" variant="outlined" required type="text" onChange={(e) => setUsername(e.target.value)} />
+            <br />
+            <br />
+            {/* <Typography id="password">Password </Typography> */}
+            <TextField id="password" label="Password" variant="outlined" required type="text" onChange={(e) => setPassword(e.target.value)} />
+            <br />
+            <br />
+            {/* <Typography id="filepath">Filepath </Typography> */}
+            <TextField id="filedpath" label="Filepath" variant="outlined" required type="text" onChange={(e) => setFilepath(e.target.value)} />
+            <br />
+            <br />
+            <br />
+            <Button variant="contained" id="connectBtn" type="submit">
+              Connect
+            </Button>
+
+          </form>
+        </center>
+        <div>{error}</div>
+      </Grid>
+    </Grid>
+
   );
 };
 

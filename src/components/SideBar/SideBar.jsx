@@ -20,7 +20,6 @@ function SideBar() {
         <SideBarStyle style={{ backgroundColor: '#3399FF'}}>
             <Link to="/connect" style={{ textDecoration: 'none', color: 'black'  }}>
                 <NavButton
-                
                     key='SideButton0'
                     className='Button'
                     view='Connect'
@@ -36,7 +35,9 @@ function SideBar() {
             </Link>
             <Link to="/tree" style={{ textDecoration: 'none', color: 'black' }}>
                 <NavButton
+
                 style={{ backgroundColor: '#3399FF' , color: 'white', fontFamily:'Sans-Serif', hover: 'white'}}
+
                     key='SideButton2'
                     className='Button'
                     view='Visualize'
