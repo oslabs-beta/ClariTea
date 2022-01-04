@@ -22,7 +22,7 @@ fileUploadController.upload = (req, res, next) => {
       });
     await client.connect()
     //Currently limited query to 3 results
-    const rs = await client.execute("SELECT * FROM movies.movies_and_tv LIMIT 3")
+    const rs = await client.execute("SELECT json type, title, director FROM movies.movies_and_tv LIMIT 3")
     console.log(rs);
     res.locals.results = rs;
     await client.shutdown();
