@@ -10,44 +10,44 @@ const SideBarStyle = styled.div`
   border-right: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.10);
   display: inline-block;
-  height: calc(100vh - 64px);
+  height: calc(100vh - 20px);
   position: relative;
 `;
 
 
 function SideBar() {
     return (
-        <SideBarStyle style={{ backgroundColor: '#F0F0F0'}}>
+        <SideBarStyle style={{ backgroundColor: '#3399FF'}}>
             <Link to="/connect" style={{ textDecoration: 'none', color: 'black'  }}>
                 <NavButton
-                style={{ backgroundColor: '#FF33FF', color: 'white' , fontFamily:'Sans-Serif'}}
+                
                     key='SideButton0'
-                    className='connect'
+                    className='Button'
                     view='Connect'
                 />
             </Link>
             <Link to="/schema" style={{ textDecoration: 'none', color: 'black' }}>
                 <NavButton
-                    style={{ backgroundColor: '#9933FF' , color: 'white', fontFamily:'Sans-Serif' }}
+                    style={{ backgroundColor: '#3399FF' , color: 'white', fontFamily:'Sans-Serif'}}
                     key='SideButton1'
-                    className='datamodel'
+                    className='Button'
                     view='Data Modeling'
                 />
             </Link>
             <Link to="/tree" style={{ textDecoration: 'none', color: 'black' }}>
                 <NavButton
-                style={{ backgroundColor: '#FF3399' , color: 'white', fontFamily:'Sans-Serif'}}
+                style={{ backgroundColor: '#3399FF' , color: 'white', fontFamily:'Sans-Serif', hover: 'white'}}
                     key='SideButton2'
-                    className='visualize'
+                    className='Button'
                     view='Visualize'
                 />
             </Link>
             <Link to="/repTree" style={{ textDecoration: 'none', color: 'black'}}>
                 <NavButton
-                    style={{ backgroundColor: '#33FFFF', color: 'white', fontFamily:'Sans-Serif'}}
+                    style={{ backgroundColor: '#3399FF', color: 'white', fontFamily:'Sans-Serif'}}
                     key='SideButton3'
-                    className='Replication Factor'
-                    view='Replication Factor'
+                    className='Button'
+                    view='Replication'
                 />
             </Link>
         </SideBarStyle>

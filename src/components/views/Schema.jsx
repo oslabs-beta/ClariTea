@@ -6,6 +6,12 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+// import Tree from 'react-d3-tree';
+import SideBar from '../SideBar/SideBar.jsx';
+import Header from '../header/header.jsx'
+// import { Schema } from '@mui/icons-material';
+import Grid from '@material-ui/core/Grid';
+import { grid } from '@mui/system';
 
 // /****CQL DATA TYPES TABLE****/
 // function createDataTypes(name, genre, title, releasedate, avgrating) {
@@ -111,6 +117,14 @@ const rows = [
 
 export default function DataSnapshotTable() {
   return (
+    <Grid container spacing= {0}>
+    <Grid item xs={12}>
+    <Header/>
+    </Grid>
+    <Grid item xs={2}>
+    <SideBar />
+    </Grid>
+    <Grid item xs={10}>
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
@@ -140,5 +154,7 @@ export default function DataSnapshotTable() {
         </TableBody>
       </Table>
     </TableContainer>
+    </Grid>
+    </Grid>
   );
 }

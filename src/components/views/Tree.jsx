@@ -490,12 +490,12 @@ const styleNodes = ({nodeDatum, toggleNode}) => (
       
     </text>
     {nodeDatum.attributes?.Released && ( 
-      <text fill="black" x="25" dy="18" strokeWidth="1">
+      <text fill="black" x="25" dy="18" strokeWidth="1" fontFamily='Sans-Serif'>
         Released Date: {nodeDatum.attributes?.Released}
       </text>
     )}
      {nodeDatum.attributes?.Rating && (
-      <text fill="black" x="25" dy="35" strokeWidth="1">
+      <text fill="black" x="25" dy="35" strokeWidth="1" fontFamily='Sans-Serif'>
         Rating: {nodeDatum.attributes?.Rating}
       </text>
     )}
@@ -508,10 +508,10 @@ export default function OrgChartTree(){
       <Grid item xs={12}>
       <Header/>
       </Grid>
-      <Grid item xs={2}>
+      <Grid item xs={1}>
       <SideBar />
       </Grid>
-      <Grid item xs={10}>
+      <Grid item xs={11}>
       <div id="treeWrapper" style={{ width: '100em', height: '50em'}}>
     <Tree data={orgChart}   
         renderCustomNodeElement={styleNodes}
