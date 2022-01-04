@@ -73,7 +73,7 @@
 import React from 'react';
 import Tree from 'react-d3-tree';
 import SideBar from '../SideBar/SideBar.jsx';
-import Header from '../header/header.jsx'
+import Header from '../header/Header.jsx'
 import Grid from '@material-ui/core/Grid';
 import { fontFamily } from '@mui/system';
 

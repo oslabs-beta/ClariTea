@@ -8,7 +8,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 // import Tree from 'react-d3-tree';
 import SideBar from '../SideBar/SideBar.jsx';
-import Header from '../header/header.jsx'
+import Header from '../header/Header.jsx'
 // import { Schema } from '@mui/icons-material';
 import Grid from '@material-ui/core/Grid';
 import { grid } from '@mui/system';
