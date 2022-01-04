@@ -9,7 +9,8 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
-import Paper from '@mui/material/Paper';
+import logo from '../assets/ClariTea-Light_Mode_Flat.png'
+
 
 function ConnectForm() {
   const [username, setUsername] = useState('');
@@ -44,8 +45,9 @@ function ConnectForm() {
         <SideBar />
       </Grid>
       <Grid item xs={10}>
-        <Typography variant="h5" align="center" color="primary">Connect to ClariTea</Typography>
-        <br />
+        <center>
+          <img src={logo} width="200"></img>
+        </center>
         <br />
         <center>
           <form className="connectForm" onSubmit={handleSubmit}>
