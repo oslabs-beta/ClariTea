@@ -62,7 +62,7 @@ function ConnectForm() {
             <br />
             <br />
             <br />
-            <Button variant="contained" id="connectBtn" type="submit">
+            <Button variant="contained" id="connectBtn" type="submit" style={{fontFamily:'Sans-Serif', backgroundColor:'#3399FF'}}>
               Connect
             </Button>
 
