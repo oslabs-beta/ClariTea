@@ -1,12 +1,19 @@
-<p align="center"><img src="https://media.giphy.com/media/LnXpLY2qvtU17H5EQD/giphy.gif" "></p>
-<h1 align="left">ClariTea</h1>
+<p  align="center"><img  src="https://media.giphy.com/media/LnXpLY2qvtU17H5EQD/giphy.gif"></p>
+<p  align="center">
+<img  src="https://img.shields.io/github/license/oslabs-beta/ClariTea?color=blue"  />
+<img  src="https://img.shields.io/badge/Prs-Welcome-blue"/>
+<img  src="https://img.shields.io/badge/Contributions-Welcome-blue"/>
+</p>
+
+<h2  align="center">Apache Cassandra Cluster Visualizer</h2>
+
+## About 
+
 A visualization application created to help developers explore and understand their Apache Cassandra clusters.
-</h3>
 
-</br>
+<br/>
 
-
-<h1 align="left">Core Features</h1>
+## Core Features
 
 
 * Visualizer utilizing Astra (Datastax cloud based Cassandra database) and connection pooling to populate a sample database PRIOR to deployment.
@@ -22,6 +29,25 @@ A visualization application created to help developers explore and understand th
 
 </br>
 
+## Getting Started
+
+## Installation
+
+1. Fork and clone this repository to your machine:
+```sh
+git clone https://github.com/oslabs-beta/ClariTea.git
+```
+2. Navigate to the project directory and install dependencies.
+```sh
+npm install
+```
+3. Enter the following command to start up ClariTea.
+```sh
+npm run dev
+```
+4. This will open up the application.
+
+<br />
 
 ## 💼 Technologies Used
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
@@ -42,11 +68,26 @@ A visualization application created to help developers explore and understand th
 
 
 ### 🤝 Connect with us:
- Alexis Smith <a href="https://www.linkedin.com/in/atsmith29/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Alexis Smith | LinkedIn" width="21px"/></a></br>
- Brit Lim <a href="https://www.linkedin.com/in/brit-lim/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Brit Lim | LinkedIn" width="21px"/></a></br>
- Kirsten Coronado <a href="https://www.linkedin.com/in/kirstencoronado/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Kirsten Coronado | LinkedIn" width="21px"/></a></br>
- Peyton Pedersen <a href="https://www.linkedin.com/in/peyton-pedersen-b6019a1a6/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Peyton Pedersen | LinkedIn" width="21px"/></a></br>
- Phillip Yoo <a href="https://www.linkedin.com/in/phillipyoo218"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Phillip Yoo | LinkedIn" width="21px"/></a></br>
+[Alexis Smith](https://github.com/lexlexsquared) <a href="https://www.linkedin.com/in/atsmith29/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Alexis Smith | LinkedIn" width="21px"/></a></br>
+[Brit Lim](https://github.com/britlim)<a href="https://www.linkedin.com/in/brit-lim/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Brit Lim | LinkedIn" width="21px"/></a></br>
+[Kirsten Coronado](https://github.com/helloblair) <a href="https://www.linkedin.com/in/kirstencoronado/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Kirsten Coronado | LinkedIn" width="21px"/></a></br>
+[Peyton Pederson](https://github.com/peyton333) <a href="https://www.linkedin.com/in/peyton-pedersen-b6019a1a6/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Peyton Pedersen | LinkedIn" width="21px"/></a></br>
+ [Phillip Yoo](https://github.com/yoophillip) <a href="https://www.linkedin.com/in/phillipyoo218"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Phillip Yoo | LinkedIn" width="21px"/></a></br>
 
 
 </br>
+
+### Contributions Welcome!
+
+If you found this interesting or helpful at all, feel free to drop a [![GitHub stars](https://img.shields.io/github/stars/oslabs-beta/clariTea?style=social&label=Star&)](https://github.com/oslabs-beta/clariTea/stargazers) on this project to show your support!
+
+You can contribute by:
+
+* Raising any issues you find using ClariTea
+* Fixing issues by opening Pull Requests
+* Improving documentation
+
+All bugs, tasks or enhancements are tracked as <a href="https://github.com/oslabs-beta/ClariTea/issues">GitHub issues</a>. Issues which might be a good start for new contributors are marked with "good-start" label.
+
+## License
+MIT
