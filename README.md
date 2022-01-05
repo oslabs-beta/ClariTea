@@ -15,7 +15,13 @@ ClariTea is a visualization application tool created to help developers explore 
 
 <h1 align="center">How to use this tool</h1>
 <h2 align="center">Connect using ASTRA Client information</h2>
-<p  align="center"><img  src="https://imgur.com/a/ZqyhogG"></p>
+<p  align="center"><img  src="https://user-images.githubusercontent.com/77547118/148264209-8231af2d-8707-4a3f-938e-dee8e34e9caf.png"></p>
+<h2 align="center">Visualization of data</h2>
+<p  align="center"><img  src="https://user-images.githubusercontent.com/77547118/148264209-8231af2d-8707-4a3f-938e-dee8e34e9caf.png"></p>
+<h2 align="center">Visualization of replication factor</h2>
+<p  align="center"><img  src="https://user-images.githubusercontent.com/77547118/148264209-8231af2d-8707-4a3f-938e-dee8e34e9caf.png"></p>
+<h2 align="center">Layout of client schema</h2>
+<p  align="center"><img  src="https://user-images.githubusercontent.com/77547118/148264209-8231af2d-8707-4a3f-938e-dee8e34e9caf.png"></p>
 
 ## Getting Started
 
@@ -38,6 +44,7 @@ npm run dev
 <br />
 
 ## 💼 Technologies Used
+
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
@@ -45,13 +52,13 @@ npm run dev
 ![Electron.js](https://img.shields.io/badge/Electron-191970?style=for-the-badge&logo=Electron&logoColor=white)
 ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
 ![ApacheCassandra](https://img.shields.io/badge/cassandra-%231287B1.svg?style=for-the-badge&logo=apache-cassandra&logoColor=white)
-</br>
 
-
+ 
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
 ![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=material-ui&logoColor=white)
 ![D3](https://camo.githubusercontent.com/b6bc98f08c1372a51191e0e6b4fb7671c8f8980243646b7cedb6c4a5239611b1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f44332e6a732532302d2532334244353335302e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d44332e6a73266c6f676f436f6c6f723d463941303343)
+ 
 
 ## Core Features
 
