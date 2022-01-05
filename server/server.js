@@ -23,7 +23,7 @@ app.post('/api/fileUpload', fileUploadController.upload, (req, res) => {
 // const { Client } = require('cassandra-driver');
 // async function run () {const client = new Client({
 // cloud: { secureConnectBundle: path },
-// credentials: { username: 'YKZipmZFWjYIQsiXSeTHDkjB', password: 'vHW4ZsCoBvF678I9wxKA,+W-P24p20YLFlxKNyxkR9--1jl_IP0gC7WOz2uFDPJCbaL.jr02EzD2PzwHmaHkJf-go8LR-aiIOZih+gTkH8L32KwOzCdfHZ9fj8REIYhZ' }});
+// credentials: { username: 'YKZipmZFWjYIQsiXSeTHDkjB', password: 'vHW4ZsCoBvF678I9wxKA,+W-P24p20YLFlxKNyxkR9--1jl_IP0gC7WOz2uFDPJCbaL. jr02EzD2PzwHmaHkJf-go8LR-aiIOZih+gTkH8L32KwOzCdfHZ9fj8REIYhZ' }});
 // await client.connect();
 // // Execute a query
 // const rs = await client.execute("SELECT * FROM system.local");

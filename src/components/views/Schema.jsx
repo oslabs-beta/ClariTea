@@ -6,12 +6,9 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-// import Tree from 'react-d3-tree';
 import SideBar from '../SideBar/SideBar.jsx';
-import Header from '../header/header.jsx'
-// import { Schema } from '@mui/icons-material';
+import Header from '../header/Header.jsx'
 import Grid from '@material-ui/core/Grid';
-import { grid } from '@mui/system';
 
 // /****CQL DATA TYPES TABLE****/
 // function createDataTypes(name, genre, title, releasedate, avgrating) {
@@ -125,11 +122,11 @@ export default function DataSnapshotTable() {
     <SideBar />
     </Grid>
     <Grid item xs={10}>
-    <TableContainer component={Paper}>
+    <TableContainer className="tableBG" component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell><h1>CQL SCHEMA MODELS</h1></TableCell>
+            <TableCell><h1>CQL SCHEMA SNAPSHOT</h1></TableCell>
             <TableCell align="center">Movie Genre</TableCell>
             <TableCell align="center">Movie Title</TableCell>
             <TableCell align="center">Release Date</TableCell>
