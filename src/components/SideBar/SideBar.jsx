@@ -17,7 +17,7 @@ const SideBarStyle = styled.div`
 
 function SideBar() {
     return (
-        <SideBarStyle style={{ backgroundColor: '#3399FF' }}>
+        <SideBarStyle style={{ backgroundColor: 'black' }}>
             <Link to="/connect" style={{ textDecoration: 'none', color: 'black' }}>
                 <NavButton
                     style={{ backgroundColor: '#3399FF', color: 'white', fontFamily: 'Sans-Serif' }}
@@ -28,7 +28,6 @@ function SideBar() {
             </Link>
             <Link to="/schema" style={{ textDecoration: 'none', color: 'black' }}>
                 <NavButton
-                    style={{ backgroundColor: '#3399FF', color: 'white', fontFamily: 'Sans-Serif' }}
                     key='SideButton1'
                     className='Button'
                     view='Data Modeling'
@@ -36,9 +35,6 @@ function SideBar() {
             </Link>
             <Link to="/tree" style={{ textDecoration: 'none', color: 'black' }}>
                 <NavButton
-
-                    style={{ backgroundColor: '#3399FF', color: 'white', fontFamily: 'Sans-Serif', hover: 'white' }}
-
                     key='SideButton2'
                     className='Button'
                     view='Visualize'
@@ -46,7 +42,6 @@ function SideBar() {
             </Link>
             <Link to="/repTree" style={{ textDecoration: 'none', color: 'black' }}>
                 <NavButton
-                    style={{ backgroundColor: '#3399FF', color: 'white', fontFamily: 'Sans-Serif' }}
                     key='SideButton3'
                     className='Button'
                     view='Replication'

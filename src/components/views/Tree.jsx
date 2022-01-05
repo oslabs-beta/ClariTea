@@ -512,7 +512,7 @@ export default function OrgChartTree(){
       <SideBar />
       </Grid>
       <Grid item xs={11}>
-      <div id="treeWrapper" style={{ width: '100em', height: '50em'}}>
+      <div id="treeWrapper" style={{ width: '100em', height: '50em', backgroundColor: '#F8F8F8'}}>
     <Tree data={orgChart}   
         renderCustomNodeElement={styleNodes}
         />
