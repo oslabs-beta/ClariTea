@@ -5,7 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Image } from '@mui/icons-material';
-import logoblack from '../assets/logoblack.png'
+import logoblack from '../assets/ClariTea-Black-Flat_200_x_100_px.png'
 
 
 export default function Header() {
