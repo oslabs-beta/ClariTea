@@ -7,7 +7,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import SideBar from '../SideBar/SideBar.jsx';
-import Header from '../header/header.jsx'
+import Header from '../header/Header.jsx'
 import Grid from '@material-ui/core/Grid';
 
 // /****CQL DATA TYPES TABLE****/
