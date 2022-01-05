@@ -59,17 +59,6 @@ npm run dev
 ![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=material-ui&logoColor=white)
 ![D3](https://camo.githubusercontent.com/b6bc98f08c1372a51191e0e6b4fb7671c8f8980243646b7cedb6c4a5239611b1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f44332e6a732532302d2532334244353335302e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d44332e6a73266c6f676f436f6c6f723d463941303343)
  
-
-## Core Features
-
-* Visualizer utilizing Astra and connection pooling to populate a sample database PRIOR to deployment.
-
-* Dynamic visualization to help with learning and understanding of the availability of data with Cassandra's 4D cluster-ring node system in mind.
-
-
-
-
-
 </br>
 
 ### 🤝 Connect with us:
