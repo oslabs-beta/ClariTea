@@ -62,8 +62,6 @@ npm run dev
 
 ## Core Features
 
-* User input of ASTRA client information for RESTapi querying allows for a rapidly queryable and populatable cluster so that schemas can be dynamically viewable.
-
 * Visualizer utilizing Astra and connection pooling to populate a sample database PRIOR to deployment.
 
 * Dynamic visualization to help with learning and understanding of the availability of data with Cassandra's 4D cluster-ring node system in mind.
