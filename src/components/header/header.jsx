@@ -24,7 +24,7 @@ export default function Header() {
             </a>
           </Button>
           <Button variant="text" style={{textDecoration: 'none', color: 'white'}}>
-          <a style={{ display: 'flex', textDecoration: 'none', alignItems: 'center', color: 'white'}} color="inherit" href="" target="_blank">
+          <a style={{ display: 'flex', textDecoration: 'none', alignItems: 'center', color: 'white'}} color="inherit" href="https://claritea.dev" target="_blank">
               <i className="fab fa-github fa-3x" style={{ fontSize: "30px"}}></i>
               <p>Docs</p>
             </a>
