@@ -36,15 +36,14 @@ function ConnectForm() {
 
 
   return (
-
     <Grid container spacing={0} >
       <Grid item xs={12}>
         <Header />
       </Grid>
-      <Grid item xs={0}>
+      <Grid item xs={1}>
         <SideBar />
       </Grid>
-      <Grid item xs={10} style={{ backgroundColor: '#F8F8F8' }}>
+      <Grid item xs={11} style={{ width: '100em', backgroundColor: '#F8F8F8' }}>
         <center>
           <img src={logo} width="200"></img>
         </center>
