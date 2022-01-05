@@ -29,7 +29,7 @@ function SideBar() {
                 <NavButton
                     key='SideButton1'
                     className='Button'
-                    view='Data Modeling'
+                    view='Schema'
                 />
             </Link>
             <Link to="/tree" style={{ textDecoration: 'none', color: 'black' }}>
