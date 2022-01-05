@@ -1,7 +1,7 @@
 <p  align="center"><img  src="https://media.giphy.com/media/LnXpLY2qvtU17H5EQD/giphy.gif"></p>
 <p  align="center">
-<img  src="https://img.shields.io/github/license/oslabs-beta/ClariTea?color=blue"  />
-<img  src="https://img.shields.io/badge/Prs-Welcome-blue"/>
+<img  src="https://img.shields.io/badge/License-MIT-blue"/>
+<img  src="https://img.shields.io/badge/PRs-Welcome-blue"/>
 <img  src="https://img.shields.io/badge/Contributions-Welcome-blue"/>
 </p>
 
@@ -77,7 +77,7 @@ npm run dev
 
 </br>
 
-### Contributions Welcome!
+## Contributions Welcome!
 
 If you found this interesting or helpful at all, feel free to drop a [![GitHub stars](https://img.shields.io/github/stars/oslabs-beta/clariTea?style=social&label=Star&)](https://github.com/oslabs-beta/clariTea/stargazers) on this project to show your support!
 
