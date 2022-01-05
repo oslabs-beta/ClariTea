@@ -504,7 +504,7 @@ const styleNodes = ({nodeDatum, toggleNode}) => (
 
 export default function OrgChartTree(){                                                                                                                                                                                                                     
   return (
-    <Grid container spacing= {0}>
+    <Grid container spacing= {0} style={{backgroundColor: '#F8F8F8'}}>
       <Grid item xs={12}>
       <Header/>
       </Grid>
@@ -512,7 +512,7 @@ export default function OrgChartTree(){
       <SideBar />
       </Grid>
       <Grid item xs={11}>
-      <div id="treeWrapper" style={{ width: '100em', height: '50em', backgroundColor: '#F8F8F8'}}>
+      <div id="treeWrapper" style={{ width: '100%', height: '100%', backgroundColor: '#F8F8F8'}}>
     <Tree data={orgChart}   
         renderCustomNodeElement={styleNodes}
         />
