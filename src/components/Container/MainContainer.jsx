@@ -1,6 +1,6 @@
 import React from 'react';
 import SideBar from '../SideBar/SideBar.jsx'
-import Header from '../header/header.jsx'
+import Header from '../header/Header.jsx'
 // import Upload from '../SideBar/Upload.jsx'
 import ConnectForm from '../SideBar/ConnectForm.jsx'
 import {

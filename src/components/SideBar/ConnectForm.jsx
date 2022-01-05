@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import regeneratorruntime from 'regenerator-runtime';
 import SideBar from './SideBar.jsx';
-import Header from '../header/header.jsx';
+import Header from '../header/Header.jsx';
 import Grid from '@material-ui/core/Grid';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
@@ -51,15 +51,15 @@ function ConnectForm() {
         <br />
         <center>
           <form className="connectForm" onSubmit={handleSubmit}>
-            <TextField id="username" label="Username" variant="outlined" required type="text" onChange={(e) => setUsername(e.target.value)} />
+            <TextField id="username" label="Client ID" variant="outlined" required type="text" onChange={(e) => setUsername(e.target.value)} />
             <br />
             <br />
             {/* <Typography id="password">Password </Typography> */}
-            <TextField id="password" label="Password" variant="outlined" required type="text" onChange={(e) => setPassword(e.target.value)} />
+            <TextField id="password" label="Client Secret" variant="outlined" required type="text" onChange={(e) => setPassword(e.target.value)} />
             <br />
             <br />
             {/* <Typography id="filepath">Filepath </Typography> */}
-            <TextField id="filedpath" label="Filepath" variant="outlined" required type="text" onChange={(e) => setFilepath(e.target.value)} />
+            <TextField id="filepath" label="Filepath" variant="outlined" required type="text" onChange={(e) => setFilepath(e.target.value)} />
             <br />
             <br />
             <br />

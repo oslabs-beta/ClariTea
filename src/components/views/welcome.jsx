@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../header/header.jsx";
+import Header from "../header/Header.jsx";
 import SideBar from "../SideBar/SideBar.jsx";
 
 export default function Welcome() {
