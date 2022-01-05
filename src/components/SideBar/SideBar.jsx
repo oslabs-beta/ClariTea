@@ -17,9 +17,10 @@ const SideBarStyle = styled.div`
 
 function SideBar() {
     return (
-        <SideBarStyle style={{ backgroundColor: '#3399FF'}}>
-            <Link to="/connect" style={{ textDecoration: 'none', color: 'black'  }}>
+        <SideBarStyle style={{ backgroundColor: '#3399FF' }}>
+            <Link to="/connect" style={{ textDecoration: 'none', color: 'black' }}>
                 <NavButton
+                    style={{ backgroundColor: '#3399FF', color: 'white', fontFamily: 'Sans-Serif' }}
                     key='SideButton0'
                     className='Button'
                     view='Connect'
@@ -27,7 +28,7 @@ function SideBar() {
             </Link>
             <Link to="/schema" style={{ textDecoration: 'none', color: 'black' }}>
                 <NavButton
-                    style={{ backgroundColor: '#3399FF' , color: 'white', fontFamily:'Sans-Serif'}}
+                    style={{ backgroundColor: '#3399FF', color: 'white', fontFamily: 'Sans-Serif' }}
                     key='SideButton1'
                     className='Button'
                     view='Data Modeling'
@@ -36,16 +37,16 @@ function SideBar() {
             <Link to="/tree" style={{ textDecoration: 'none', color: 'black' }}>
                 <NavButton
 
-                style={{ backgroundColor: '#3399FF' , color: 'white', fontFamily:'Sans-Serif', hover: 'white'}}
+                    style={{ backgroundColor: '#3399FF', color: 'white', fontFamily: 'Sans-Serif', hover: 'white' }}
 
                     key='SideButton2'
                     className='Button'
                     view='Visualize'
                 />
             </Link>
-            <Link to="/repTree" style={{ textDecoration: 'none', color: 'black'}}>
+            <Link to="/repTree" style={{ textDecoration: 'none', color: 'black' }}>
                 <NavButton
-                    style={{ backgroundColor: '#3399FF', color: 'white', fontFamily:'Sans-Serif'}}
+                    style={{ backgroundColor: '#3399FF', color: 'white', fontFamily: 'Sans-Serif' }}
                     key='SideButton3'
                     className='Button'
                     view='Replication'
