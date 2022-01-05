@@ -1,7 +1,7 @@
 import React from 'react';
 import Tree from 'react-d3-tree';
 import SideBar from '../SideBar/SideBar.jsx';
-import Header from '../header/header.jsx'
+import Header from '../header/Header.jsx'
 import Grid from '@material-ui/core/Grid';
 
 const orgChart = {
@@ -540,7 +540,7 @@ const orgChart = {
         <SideBar />
         </Grid>
         <Grid item xs={11}>
-        <div id="treeWrapper" style={{ width: '100em', height: '50em' }}>
+        <div id="treeWrapper" style={{ width: '100em', height: '50em', backgroundColor: '#F8F8F8' }}>
       <Tree data={orgChart}   
           renderCustomNodeElement={styleNodes}
           />
