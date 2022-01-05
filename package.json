@@ -1,13 +1,13 @@
 {
-  "name": "cassandra-visualizer",
+  "name": "ClariTea",
   "version": "1.0.0",
-  "description": "Apache Cassandra Schema Visualizer",
+  "description": "Visualization app created to help developers explore and understand their Apache Cassandra clusters",
   "main": "main.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development concurrently \"nodemon server/server.js\" \"webpack serve --config=./webpack.dev.config.js\"",
-    "prod": "cross-env NODE_ENV=production webpack --mode production --config webpack.build.config.js && electron --noDevServer .",
+    "prod": "cross-env NODE_ENV=production webpack --mode production --config webpack.config.js && electron --noDevServer .",
     "start": "electron-forge start ",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.build.config.js --mode production",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js --mode production",
     "package": "npm run build",
     "postpackage": "electron-packager ./ --out=./builds",
     "test": "jest --verbose"

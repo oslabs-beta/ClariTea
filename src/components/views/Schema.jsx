@@ -8,7 +8,6 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import SideBar from '../SideBar/SideBar.jsx';
 import Header from '../header/Header.jsx'
-// import { Schema } from '@mui/icons-material';
 import Grid from '@material-ui/core/Grid';
 
 /*Intro*/
