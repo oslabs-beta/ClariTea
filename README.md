@@ -15,13 +15,13 @@ ClariTea is a visualization application tool created to help developers explore 
 
 <h1 align="center">How to use this tool</h1>
 <h2 align="center">Connect using ASTRA Client information</h2>
-<p  align="center"><img  src="https://user-images.githubusercontent.com/77547118/148264209-8231af2d-8707-4a3f-938e-dee8e34e9caf.png"></p>
+<p  align="center"><img  src="https://raw.githubusercontent.com/oslabs-beta/ClariTea/a463a423b7fecb73af25173a474642ea1541292c/src/components/assets/ConnectForm%20(1130%20x%20600%20px).gif"></p>
 <h2 align="center">Visualization of data</h2>
-<p  align="center"><img  src="https://user-images.githubusercontent.com/77547118/148264209-8231af2d-8707-4a3f-938e-dee8e34e9caf.png"></p>
-<h2 align="center">Visualization of replication factor</h2>
-<p  align="center"><img  src="https://user-images.githubusercontent.com/77547118/148264209-8231af2d-8707-4a3f-938e-dee8e34e9caf.png"></p>
+<p  align="center"><img  src="https://raw.githubusercontent.com/oslabs-beta/ClariTea/a463a423b7fecb73af25173a474642ea1541292c/src/components/assets/Visualize%20(1130%20x%20600%20px).gif"></p>
 <h2 align="center">Layout of client schema</h2>
-<p  align="center"><img  src="https://user-images.githubusercontent.com/77547118/148264209-8231af2d-8707-4a3f-938e-dee8e34e9caf.png"></p>
+<p  align="center"><img  src="https://raw.githubusercontent.com/oslabs-beta/ClariTea/a463a423b7fecb73af25173a474642ea1541292c/src/components/assets/Schema%20(1130%20x%20600%20px).png"></p>
+<h2 align="center">Visualization of replication factor</h2>
+<p  align="center"><img  src="https://raw.githubusercontent.com/oslabs-beta/ClariTea/a463a423b7fecb73af25173a474642ea1541292c/src/components/assets/Replication%20(1130%20x%20600%20px).gif"></p>
 
 ## Getting Started
 
