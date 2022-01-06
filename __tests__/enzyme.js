@@ -1,7 +1,14 @@
 import React from 'react';
 import { configure, shallow, render, mount } from 'enzyme';
+import Enzyme from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import toJson from 'enzyme-to-json';
+
+// import SideBar from './../src/components/SideBar/SideBar';
+// import ConnectForm from './../src/components/SideBar/ConnectForm';
+// import header from './../src/components/header/header';
+// import App from './../src/components/App';
+
 
 Enzyme.configure({ adapter: new Adapter() });
 

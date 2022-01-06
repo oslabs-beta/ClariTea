@@ -3,7 +3,6 @@ const fs = require('fs');
 const path = require('path');
 
 
-const devJsonFile = path.resolve(__dirname, '../server/db/cluster.test.json');
 const server = 'http://localhost:3000';
 
 /**
@@ -26,9 +25,9 @@ describe('Connection Sync', () => {
         .expect('Content-Type', /application\/json/)
         .end((err, res) => { done(); }));
 
-      it('responds to invalid request with 400 status and error message in body', (done) => request(server)
+      it('responds to invalid request with 500 status and error message in body', (done) => request(server)
         .put('*')
-        .expect(400)
+        .expect(500)
         // eslint-disable-next-line no-unused-vars
         .end((err, res) => { done(); }));
     })
