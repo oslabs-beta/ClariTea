@@ -185,7 +185,7 @@ const styleNodes = ({ nodeDatum, toggleNode }) => (
     )}
   </g>
 );
-
+/*-------------------- Functional Component --------------------*/
 export default function OrgChartTree() {
   return (
     <Grid container spacing={0} style={{ backgroundColor: '#F8F8F8' }}>
@@ -204,4 +204,4 @@ export default function OrgChartTree() {
       </Grid>
     </Grid>
   )
-};
+}

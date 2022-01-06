@@ -1,4 +1,4 @@
-const { Client } = require('cassandra-driver')
+const { Client } = require('cassandra-driver');
 const fileUploadController = {};
 
 fileUploadController.upload = (req, res, next) => {
@@ -19,9 +19,12 @@ fileUploadController.upload = (req, res, next) => {
       credentials: { username: username, password: password }
       });
     await client.connect()
-    //Currently limited query to 3 results
-    const rs = await client.execute("SELECT json type, title, director FROM movies.movies_and_tv LIMIT 3")
-    console.log(rs);
+    /*Retrieving data
+    The execute() method can be used to send a CQL query to a Cassandra node.
+    Execution methods in the driver return a Promise, you can await on the promise to be fulfilled using async functions. 
+    Currently limited query to 3 results -> adjust query below before connecting.
+    */
+    const rs = await client.execute("SELECT json type, title, director FROM movies.movies_and_tv LIMIT 3");
     res.locals.results = rs;
     await client.shutdown();
     return next();
@@ -32,8 +35,9 @@ fileUploadController.upload = (req, res, next) => {
       status: 500,
       message: { err: 'Error connecting' },
     });
-  };
-};  
+  }
+};
+//Runs the async call to connect the client  
 run();
 };
  

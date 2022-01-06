@@ -8,7 +8,7 @@ import MainContainer from './components/Container/MainContainer.jsx';
 import RepTree from './components/views/ReplicationFactor.jsx';
 import Schema from './components/views/Schema.jsx';
 
-// Now we can render our application into it
+//renders Routers and application by 'root'
 render(
 <HashRouter>
 <Routes>

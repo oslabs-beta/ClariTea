@@ -38,7 +38,9 @@ const Icon = styled.span`
   font-size: calc(14px + 1vw);
 `;
 
+/*-------------------- Functional Component --------------------*/
 const NavButton = ({ className, click, view, style }) => {
+
   return (
     <ButtonContainer style={style} onClick={click} id={view}>
       <Button>

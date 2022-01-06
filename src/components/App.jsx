@@ -7,4 +7,6 @@ export default function App() {
       <MainContainer />
     </div>
   )
-};
+}
+
+//MainContainer renders Header and SideBar components

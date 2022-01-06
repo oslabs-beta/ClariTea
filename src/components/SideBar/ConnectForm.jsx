@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import { Navigate } from 'react-router';
 import axios from 'axios';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import regeneratorruntime from 'regenerator-runtime';
 import SideBar from './SideBar.jsx';
 import Header from '../header/Header.jsx';
 import Grid from '@material-ui/core/Grid';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
-import logo from '../assets/ClariTea-Light_Mode_Flat.png'
+import logo from '../assets/ClariTea-Light_Mode_Flat.png';
 
 
 function ConnectForm() {
@@ -19,11 +20,13 @@ function ConnectForm() {
   let error;
   const navigate = useNavigate();
 
+  //Handles async call to retrieve client schema information after proper connection
   const handleSubmit = async (e) => {
     e.preventDefault();
     const reqOptions = { username, password, filepath };
     const response = await axios.post('/api/fileUpload', reqOptions);
     if (response.data.error) error = response.data.error;
+    //On successful connection, user will be navigated to the tree page for visualization
     if (response.data.results) {
       setResults(response.data.results);
       console.log(response.data.results)
@@ -31,7 +34,6 @@ function ConnectForm() {
       navigate('/tree', { state: { results: response.data.results } })
     }
   };
-
 
   return (
     <Grid container spacing={0} >

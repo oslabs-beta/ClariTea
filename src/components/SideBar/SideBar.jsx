@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import NavButton from './Buttons.jsx'
 import { Link } from "react-router-dom";
 
-// whole sidebar
+// styling the entire sidebar
 const SideBarStyle = styled.div`
   background-color: white;
   grid-area: navSideBar;
@@ -15,6 +15,8 @@ const SideBarStyle = styled.div`
 `;
 
 function SideBar() {
+    // connects the application to the context utilizing Link in react router dom 
+    // NavButton was brought from the buttons component
     return (
         <SideBarStyle style={{ backgroundColor: 'black' }}>
             <Link to="/connect" style={{ textDecoration: 'none', color: 'black' }}>

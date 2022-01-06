@@ -15,7 +15,7 @@ import Grid from '@material-ui/core/Grid';
 function createDataSnapshot(name, genre, title, releasedate, avgrating) {
   return { name, genre, title, releasedate, avgrating };
 }
-
+//Each individual items in a row
 const rows = [
   createDataSnapshot('Data Types', 'text', 'text', 'date', 'blob'),
   createDataSnapshot('Data Models', 'partition key', 'clustering key', 'N/A', 'N/A'),
@@ -26,6 +26,8 @@ const rows = [
   createDataSnapshot('Node5', 'Sci-Fi', 'The Matrix: Resurrections', '12-22-2021', '63%'),
   createDataSnapshot('Node6', 'Thriller', 'I Care A Lot', '02-19-2021', '58%'),
 ];
+
+/*-------------------- Functional Component --------------------*/
 
 export default function DataSnapshotTable() {
   return (
