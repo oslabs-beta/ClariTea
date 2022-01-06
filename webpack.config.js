@@ -1,12 +1,10 @@
-var path = require("path");
-var HtmlWebPackPlugin = require("html-webpack-plugin");
-var webpack = require('webpack');
+const path = require("path");
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-
 
 module.exports = {
     entry: "./src/index.js",
-    /* entry "./src2/index.js", */
     output: {
         path: path.join(__dirname, "build"),
         publicPath: '/build',
@@ -27,36 +25,26 @@ module.exports = {
                 plugins: ["@babel/plugin-syntax-jsx"]
               },
             },
-            exclude: /npm_modules/
+            exclude: /node_modules/
           },
           {
-            //npm install -D sass-loader css-loader style-loader webpack
-            // /\.s[ac]ss$/i
-            // /\.css /
             test: /\.s?css/,
             use: ["style-loader", "css-loader", "sass-loader"
             ],
           },
           {
-            // Now we apply rule for images
+            // Apply rule for images
             test: /\.(png|jpg|gif|svg)$/,
             use: [
               {
                 // Using file-loader for these files
                 loader: "file-loader",
-                // loader: "url-loader",
-                // In options we can set different things like format
-                // and directory to save
-                options: {
+                  options: {
                   outputPath: '/images'
                 }
               }
             ]
           },
-          // {
-          //   test: /\.(png|jpg)$/,
-          //   loader: 'url-loader'
-          // },
         ]
     },
     target: 'electron-renderer',

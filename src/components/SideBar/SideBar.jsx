@@ -14,7 +14,6 @@ const SideBarStyle = styled.div`
   position: relative;
 `;
 
-
 function SideBar() {
     return (
         <SideBarStyle style={{ backgroundColor: 'black' }}>

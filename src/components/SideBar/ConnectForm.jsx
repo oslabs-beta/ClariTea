@@ -2,12 +2,10 @@ import React, { useState } from 'react';
 import { Navigate } from 'react-router';
 import axios from 'axios';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import regeneratorruntime from 'regenerator-runtime';
 import SideBar from './SideBar.jsx';
 import Header from '../header/Header.jsx';
 import Grid from '@material-ui/core/Grid';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import logo from '../assets/ClariTea-Light_Mode_Flat.png'
 
@@ -53,25 +51,21 @@ function ConnectForm() {
             <TextField id="username" label="Client ID" variant="outlined" required type="text" onChange={(e) => setUsername(e.target.value)} />
             <br />
             <br />
-            {/* <Typography id="password">Password </Typography> */}
             <TextField id="password" label="Client Secret" variant="outlined" required type="text" onChange={(e) => setPassword(e.target.value)} />
             <br />
             <br />
-            {/* <Typography id="filepath">Filepath </Typography> */}
             <TextField id="filepath" label="Filepath" variant="outlined" required type="text" onChange={(e) => setFilepath(e.target.value)} />
             <br />
             <br />
             <br />
-            <Button variant="contained" id="connectBtn" type="submit" style={{fontFamily:'Sans-Serif', backgroundColor:'#3399FF'}}>
+            <Button variant="contained" id="connectBtn" type="submit" style={{ fontFamily: 'Sans-Serif', backgroundColor: '#3399FF' }}>
               Connect
             </Button>
-
           </form>
         </center>
         <div>{error}</div>
       </Grid >
     </Grid >
-
   );
 };
 

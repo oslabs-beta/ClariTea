@@ -11,7 +11,6 @@ import Header from '../header/Header.jsx'
 import Grid from '@material-ui/core/Grid';
 
 /*Intro*/
-
 /****CQL SCHEMA Snapshot****/
 function createDataSnapshot(name, genre, title, releasedate, avgrating) {
   return { name, genre, title, releasedate, avgrating };
@@ -30,44 +29,44 @@ const rows = [
 
 export default function DataSnapshotTable() {
   return (
-    <Grid container spacing= {0}>
-    <Grid item xs={12}>
-    <Header/>
-    </Grid>
-    <Grid item xs={2}>
-    <SideBar />
-    </Grid>
-    <Grid item xs={10}>
-    <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            <TableCell><h1>CQL SCHEMA SNAPSHOT</h1></TableCell>
-            <TableCell align="center">Movie Genre</TableCell>
-            <TableCell align="center">Movie Title</TableCell>
-            <TableCell align="center">Release Date</TableCell>
-            <TableCell align="center">Average Rating</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <TableRow
-              key={row.name}
-              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-            >
-              <TableCell component="th" scope="row">
-                {row.name}
-              </TableCell>
-              <TableCell align="center">{row.genre}</TableCell>
-              <TableCell align="center">{row.title}</TableCell>
-              <TableCell align="center">{row.releasedate}</TableCell>
-              <TableCell align="center">{row.avgrating}</TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
-    </Grid>
+    <Grid container spacing={0}>
+      <Grid item xs={12}>
+        <Header />
+      </Grid>
+      <Grid item xs={2}>
+        <SideBar />
+      </Grid>
+      <Grid item xs={10}>
+        <TableContainer component={Paper}>
+          <Table sx={{ minWidth: 650 }} aria-label="simple table">
+            <TableHead>
+              <TableRow>
+                <TableCell><h1>CQL SCHEMA SNAPSHOT</h1></TableCell>
+                <TableCell align="center">Movie Genre</TableCell>
+                <TableCell align="center">Movie Title</TableCell>
+                <TableCell align="center">Release Date</TableCell>
+                <TableCell align="center">Average Rating</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {rows.map((row) => (
+                <TableRow
+                  key={row.name}
+                  sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                >
+                  <TableCell component="th" scope="row">
+                    {row.name}
+                  </TableCell>
+                  <TableCell align="center">{row.genre}</TableCell>
+                  <TableCell align="center">{row.title}</TableCell>
+                  <TableCell align="center">{row.releasedate}</TableCell>
+                  <TableCell align="center">{row.avgrating}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+      </Grid>
     </Grid>
   );
 }

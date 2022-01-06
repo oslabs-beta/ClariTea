@@ -2,28 +2,24 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
+};
 
 .Button.hover{
   background-color: white;
-}
-
+};
 
 .node__root > circle {
   fill: #0000ff;
-
-}
+};
 
 .node__branch > circle {
   fill: #1e90ff;
-
-}
+};
 
 .node__leaf > circle {
   fill: #87cefa;
   /* Let's also make the radius of leaf nodes larger */
-}
+};
 
 #logoHeader {
   display: flex;
@@ -32,11 +28,11 @@
   padding-left: 0px;
   max-height: 90px;
   width: 200px;
-}
+};
 
 .toolbar-header {
   display: flex;
   justify-content: space-between;
   padding-left: 0px;
   margin-left: 0px;
-}
+};

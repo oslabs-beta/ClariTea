@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
-
 // shadow, button text font color;
 const fontColor = keyframes`
   to {
@@ -34,12 +33,10 @@ const Button = styled.div`
   };
 `;
 
-
 const Icon = styled.span`
   margin: 5px;
   font-size: calc(14px + 1vw);
 `;
-
 
 const NavButton = ({ className, click, view, style }) => {
   return (

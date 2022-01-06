@@ -1,5 +1,3 @@
-// const path = require('path');
-// const fs = require('fs');
 const { Client } = require('cassandra-driver')
 const fileUploadController = {};
 
@@ -41,15 +39,7 @@ run();
  
 module.exports = fileUploadController;
 
-//Promise chain for connecting
-//     client.connect()
-//     .then(console.log('connected'))
-//     .then(console.log(client.execute("SELECT * FROM system.local")));
-//     // .then(console.log(`Your cluster returned ${rs.rowLength} row(s)`));
-// };
 
-
-// export a var for use in astraDBmodels
 
 
   

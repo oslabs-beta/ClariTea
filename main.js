@@ -1,5 +1,4 @@
 'use strict'
-
 // Import parts of electron to use
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
@@ -11,7 +10,6 @@ let mainWindow;
 
 // Keep a reference for dev mode
 let dev = false
-
 
 if (process.env.NODE_ENV !== undefined && process.env.NODE_ENV === 'development') {
   dev = true
@@ -61,20 +59,7 @@ function createWindow() {
   // Don't show until we are ready and loaded
   mainWindow.once('ready-to-show', () => {
     mainWindow.show()
-
-    // Open the DevTools automatically if developing
-    if (dev) {
-      // /*
-      const { default: installExtension, REACT_DEVELOPER_TOOLS, REDUX_DEVTOOLS } = require('electron-devtools-installer')
-
-      installExtension(REACT_DEVELOPER_TOOLS, REDUX_DEVTOOLS)
-        .catch(err => console.log('Error loading React & Redux DevTools: ', err))
-      mainWindow.webContents.openDevTools()
-      // */
-      // /*
-      // */
-    }
-  })
+  });
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {
@@ -97,7 +82,7 @@ app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
     app.quit()
   }
-})
+});
 
 app.on('activate', () => {
   // On macOS it's common to re-create a window in the app when the
@@ -105,4 +90,4 @@ app.on('activate', () => {
   if (mainWindow === null) {
     createWindow()
   }
-})
+});
