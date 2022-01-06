@@ -37,7 +37,7 @@ npm install
 ```
 3. Enter the following command to start up ClariTea.
 ```sh
-npm run dev
+npm run start
 ```
 4. This will open up the application.
 
