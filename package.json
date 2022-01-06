@@ -1,0 +1,82 @@
+{
+  "name": "ClariTea",
+  "version": "1.0.0",
+  "description": "Visualization app created to help developers explore and understand their Apache Cassandra clusters",
+  "main": "main.js",
+  "scripts": {
+    "prod": "cross-env NODE_ENV=production webpack --mode production --config webpack.config.js && electron --noDevServer .",
+    "start": "cross-env NODE_ENV=development concurrently \"nodemon server/server.js\" \"webpack serve --config=./webpack.dev.config.js\"",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js --mode production",
+    "package": "npm run build",
+    "postpackage": "electron-packager ./ --out=./builds",
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oslabs-beta/ClariTea.git"
+  },
+  "author": "Alexis Smith, Brit Lim, Kirsten Coronado, Peyton Pedersen, Phillip Yoo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oslabs-beta/ClariTea/issues"
+  },
+  "homepage": "https://github.com/oslabs-beta/ClariTea#readme",
+  "jest": {
+    "globalSetup": "./jest-setup.js",
+    "globalTeardown": "./jest-teardown.js"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@material-ui/core": "^4.12.3",
+    "@mui/icons-material": "^5.2.1",
+    "@mui/material": "^5.2.3",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
+    "axios": "^0.24.0",
+    "cassandra-driver": "^4.6.3",
+    "concurrently": "^6.5.1",
+    "d3": "^7.2.1",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.2",
+    "express": "^4.17.1",
+    "jest": "^27.4.5",
+    "nodemon": "^2.0.15",
+    "path": "^0.12.7",
+    "react": "^17.0.2",
+    "react-d3-tree": "^3.1.1",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.1.1",
+    "redux": "^4.1.2",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.1",
+    "regenerator-runtime": "^0.13.9",
+    "resize-observer-polyfill": "^1.5.1",
+    "styled-components": "^5.3.3",
+    "supertest": "^6.1.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.5.1",
+    "electron": "^16.0.4",
+    "electron-devtools-installer": "^3.2.0",
+    "electron-packager": "^15.3.0",
+    "eslint": "^8.6.0",
+    "eslint-plugin-react": "^7.28.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.2.0",
+    "node-sass": "^7.0.0",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  }
+}
