@@ -41,7 +41,7 @@ module.exports = {
   devtool: 'cheap-source-map',
   devServer: {
     static: {
-    directory: path.resolve(__dirname, 'dist'),
+    directory: path.resolve(__dirname),
     },
     devMiddleware: {
       stats: {
@@ -57,14 +57,14 @@ module.exports = {
     headers: { 'Access-Control-Allow-Origin': '*' },
     proxy: {
         '/api/*': {
-          target: 'http://localhost:3000/',
+          target: `http://${process.env.HOST}:3000/`,
           secure: false,
         },
     },
-    onBeforeSetupMiddleware() {
+    onBeforeSetupMiddleware() { 
       spawn(
         'electron',
-        ['.'],
+        ['.', '--no-sandbox'],
         { shell: true, env: process.env, stdio: 'inherit' }
       )
       .on('close', code => process.exit(0))
