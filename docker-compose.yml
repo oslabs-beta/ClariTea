@@ -20,4 +20,5 @@ services:
       - CHOKIDAR_USEPOLLING=true
       - DISPLAY=$DISPLAY:0.0
       - NODE_ENV=development
+      - DOCKER=true
     user: node
