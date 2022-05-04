@@ -26,7 +26,7 @@ ClariTea is a visualization application tool created to help developers explore 
 ## Getting Started
 
 ## Installation
-
+### Traditional
 1. Fork and clone this repository to your machine:
 ```sh
 git clone https://github.com/oslabs-beta/ClariTea.git
@@ -40,6 +40,19 @@ npm install
 npm run start
 ```
 4. This will open up the application.
+### Docker  
+1. Get x11 forwarding  
+If on macOS install xQuartz[https://www.xquartz.org/index.html], for windows https://github.com/ArcticaProject/vcxsrv  
+
+2. Get your machine's local IP address
+Add this to your environment variables  
+```bash  
+export DISPLAY=IP  
+```
+3. Build and run  
+```bash  
+docker-compose build && docker-compose up  
+```
 
 <br />
 

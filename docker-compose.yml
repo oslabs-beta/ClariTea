@@ -1,0 +1,24 @@
+version: "3.6"
+services:
+  ui:
+    restart: always
+    build:
+      context: .
+      target: base
+      args:
+        - NODE_ENV=development
+        - DOCKER_VERSION=16.5.0
+        - npm_config_loglevel=verbose
+    command: npm run start
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - 3000:3000
+      - 8080:8080
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - DISPLAY=$DISPLAY:0.0
+      - NODE_ENV=development
+      - DOCKER=true
+    user: node

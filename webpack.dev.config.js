@@ -5,6 +5,7 @@ const { spawn } = require('child_process')
 
 // Any directories you will be adding code/files into, need to be added to this array so webpack will pick them up
 const defaultInclude = path.resolve(__dirname, 'src');
+const staticPath = process.env.DOCKER ? defaultInclude : path.resolve(__dirname, 'dist')
 
 module.exports = {
   module: {
@@ -41,7 +42,7 @@ module.exports = {
   devtool: 'cheap-source-map',
   devServer: {
     static: {
-    directory: path.resolve(__dirname, 'dist'),
+    directory: staticPath,
     },
     devMiddleware: {
       stats: {
@@ -57,14 +58,14 @@ module.exports = {
     headers: { 'Access-Control-Allow-Origin': '*' },
     proxy: {
         '/api/*': {
-          target: 'http://localhost:3000/',
+          target: `http://0.0.0.0:3000/`,
           secure: false,
         },
     },
     onBeforeSetupMiddleware() {
       spawn(
         'electron',
-        ['.'],
+        ['.', '--no-sandbox'],
         { shell: true, env: process.env, stdio: 'inherit' }
       )
       .on('close', code => process.exit(0))
