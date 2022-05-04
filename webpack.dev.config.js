@@ -57,7 +57,7 @@ module.exports = {
     headers: { 'Access-Control-Allow-Origin': '*' },
     proxy: {
         '/api/*': {
-          target: `http://${process.env.HOST}:3000/`,
+          target: `http://0.0.0.0:3000/`,
           secure: false,
         },
     },
