@@ -43,7 +43,7 @@ function createWindow() {
   if (dev && process.argv.indexOf('--noDevServer') === -1) {
     indexPath = url.format({
       protocol: 'http:',
-      host: '0.0.0.0:8080',
+      host: 'localhost:8080',
       pathname: 'index.html',
       slashes: true
     })
